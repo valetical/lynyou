@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lynU</title>
+<link rel="icon" type="image/png" href="icon.png">
+
+<!-- Gtfo!!! -->
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("Texture_other_061.gif");
+  background-repeat: repeat;
+
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body {
+  background: radial-gradient(circle at top, #0a0a0a 0%, #000 60%);
+  color: #aaa;
+  font-family: 'Consolas', monospace;
+  font-size: 18px;
+  line-height: 1.3;
+  max-width: 1000px;
+  margin: 3rem auto 4rem auto;
+  cursor: url("lyncursorarrow.png"), auto;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.15s ease;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.25);
+  filter: brightness(1.6);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: url("lyncursorlink.png"), auto;
+}
+
+section {
+  margin-top: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.name {
+  color: #fff;
+  font-size: 26px;
+}
+
+.soft {
+  color: #777;
+  font-size: 16px;
+}
+
+.soft2 {
+  color: #444;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  font-size: 16px;
+}
+
+.names {
+  color: #555;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  font-size: 16px;
+}
+
+.label {
+  color: #fff;
+  margin-bottom: 0.1rem;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.archive-link {
+  color: #333;
+  font-style: italic;
+  font-size: 16px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 1px;
+  margin-top: 0.2rem;
+}
+
+.archive-link:hover {
+  color: #fff;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: .8rem;
+  margin-top: .5rem;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-title {
+  grid-column: 1 / -1;
+
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  border: 1px solid #222;
+  background: rgba(255, 255, 255, 0.03);
+
+  padding: 6px 12px;
+  margin: 1rem 0 0.8rem 0;
+
+  justify-self: center;
+  display: inline-block;
+}
+
+.yt { color: #ff0033; }
+.sc { color: #ff740b; }
+.twt { color: #00a1ff; }
+.spt { color: #1ed760; }
+.apl { color: #ff4e6b; }
+.ig { color: #e1306c; }
+.bc { color: #61929c; }
+.ph { color: #72a9e0; }
+.tik { color: #ff0050; }
+.tok { color: #00f2ea; }
+.sc, .yt, .twt, .spt, .apl, .ig, .bc, .ph, .tik, .tok {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.divider { border: none; border-top: 1px solid #1e1c1b; margin: 1.3rem 0; }
+
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back">← back</a>
+
+<div style="margin-top:1.8rem">
+  <span class="name">other projects / archive</span>
+  
+  <ul class="soft2">
+    <li>this page is for my other projects / other aliases i've went by throughout the years. the way i've handled this has always been very confusing but the way i see it is that "lynU" and "red letter diary" are my main projects while everything else is either a side project or inactive</li></ul>
+</div>
+
+<hr class="divider" style="margin-top:.5rem">
+
+<div class="projects">
+  
+  <div class="section-title" id="side-projects">side projects</div>
+
+<section class="project">
+  <div class="label">14106lyn</div>
+  <div class="names">aka lynU+</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Feb 2024 – now</div>
+  <ul>
+    <li><a href="https://soundcloud.com/14106lyn"><span class="sc">SoundCloud</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">originally the name of my main project, later changed to avoid confusion with the numbers. this account is now used to post unfinished ideas, remixes, etc. also known as lynU+</li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">laurel</div>
+  <div class="names">aka yanny</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Dec 2023 – now</div>
+  <ul>
+    <li><a href="https://soundcloud.com/laurel-572942456"><span class="sc">SoundCloud</span></a></li>
+	<li><a href="https://soundcloud.com/yanny-448088463"><span class="sc">SoundCloud (yanny)</span></a></li>
+    <li><a href="https://open.spotify.com/artist/1eGKEKKEYhhSiYKTU6g43A"><span class="spt">Spotify</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">laurel is a duo dariacore / hyperflip / EDM project by lynU and Alyx Trick, started in December 2023. the project is themed around audio + visual illusions like laurel/yanny, the dress (gold/white or blue/black), “guy swinging toward the camera” illusion, and the spinning dancer silhouette illusion</li>  
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">yuzu</div>
+  <div class="names">aka yuzuberri</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Dec 2025 – now</div>
+  <ul>
+    <li><a href="https://soundcloud.com/yuzuberri"><span class="sc">SoundCloud</span></a></li>
+    <li><a href="https://www.youtube.com/@yuzuberr1"><span class="yt">YouTube</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">started in late 2025 as a secret but i'll keep it more like an open secret instead of something i talk about directly. video game music covers and remixes, primarily UNDERTALE / DELTARUNE and the surrounding SoundCloud fansong community</li>
+  </ul>
+</section>
+
+<div class="section-title" id="inactive">inactive</div>
+
+<section class="project">
+  <div class="label">c4pri</div>
+  <div class="names">aka ☆ capri ☆</div> 
+  <div class="soft2" style="margin-bottom: .8rem;">active May 2020 – Dec 2023</div>
+  <ul>
+    <li><a href="https://soundcloud.com/c4v"><span class="sc">SoundCloud</span></a></li>
+    <li><a href="https://soundcloud.com/c4pri"><span class="sc">SoundCloud (2020)</span></a></li>
+    <li><a href="https://open.spotify.com/artist/6f7VLFpIztoAMNJ8UzX6Yr"><span class="spt">Spotify</span></a></li>
+	<li><a href="https://www.youtube.com/@c4pri"><span class="yt">YouTube</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">c4pri was the alias i started releasing "serious" music under at 11 years old. over time i became detached from the name due to personal context around it and feeling like the music no longer represented me. some c4pri releases were later rebranded under lynU to get rid of confusion since it’s all the same artist and all in a similar style</li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">valetical</div>
+<!--  <div class="names">aka v_letical, val, valware</div> -->
+  <div class="soft2" style="margin-bottom: .8rem;">active Oct 2022 – Nov 2024</div>
+  <ul>
+    <li><a href="https://soundcloud.com/v_letical"><span class="sc">SoundCloud</span></a></li>
+    <li><a href="https://open.spotify.com/artist/2HMkNohvuwvqZD0LIx9Ssm"><span class="spt">Spotify</span></a></li>
+	<li><a href="https://www.youtube.com/@valetical"><span class="yt">YouTube</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">a more "experimental" outlet for me created as a break from the c4pri alias. i focused more on styles & genres that i had never tried / released before. the name stems from an old online username i went by since late 2018. the project is inactive and all of the releases are now under lynU</li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">katie kross</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Feb 2024 – Oct 2025</div>
+  <ul>
+    <li><a href="https://soundcloud.com/katiekross"><span class="sc">SoundCloud</span></a></li>
+    <li><a href="https://open.spotify.com/artist/2YWYSbsOOwBcDgwVK1DDI0"><span class="spt">Spotify</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">began as a side project while working on my album 'reverie,' originally used to post heavily edited or alternate versions of some of my songs that were meant for 'reverie' along with some other indie rock songs. it eventually evolved into its own thing before being retired in 2025 with the releases merging with red letter diary</li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">r4ichu</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Sep 2023 – Oct 2024</div>
+  <ul>
+    <li><a href="https://soundcloud.com/1r4ichu"><span class="sc">SoundCloud</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">short-lived SoundCloud account created in September 2023 to make fun of how formulaic the "digicore" sound became. i tried to prove that it was easy to get attention making the style if you exaggerate it enough. the songs were recorded by me and ran through an AI voice model so that my voice wasn't recognizable</li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">bleedingcanvas</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active May 2023 – Feb 2024</div>
+  <ul>
+    <li><a href="https://soundcloud.com/bleedingcanvas"><span class="sc">SoundCloud</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">bleedingcanvas began in May 2023 as a throwaway SoundCloud account when i was unhappy with my main output. i used it to try out genres like EDM, VGM, etc. i later attached it to my main account and turned it into a spam upload dump for whatever i made, but only two tracks remain public
+    </li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">sienna</div>
+  <div class="names">aka siennacell</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Jan 2024 – Jul 2025</div>
+  <ul>
+    <li><a href="https://soundcloud.com/siennacell"><span class="sc">SoundCloud</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">SoundCloud alt for posting flips and tracks initially inspired by the style of ambient trap beats i was into when i first started making music. over time, i drifted away from that original idea and posted some different tracks too.
+    </li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">boardwalk4</div>
+  <div class="names">aka 4649</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Jan 2025 - Jun 2025</div>
+  <ul>
+    <li><a href="https://soundcloud.com/boardwalk4"><span class="sc">SoundCloud</span></a></li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">c4lol</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Jul 2021 – Jan 2023</div>
+  <ul>
+    <li><a href="https://soundcloud.com/c4lol"><span class="sc">SoundCloud</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">spam / dump. not much to say about it
+    </li>
+  </ul>
+</section>
+
+<section class="project">
+  <div class="label">c4prix</div>
+  <div class="names">formerly aeronote, wux</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Dec 2021 - Oct 2023</div>
+  <ul>
+    <li><a href="https://soundcloud.com/c4prix"><span class="sc">SoundCloud</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">spam / dump, originally used when i was scared of posting "experimental" music to my main page and needed a place to release other kinds of music</li></ul>
+</section>
+
+<section class="project">
+  <div class="label">gremlife</div>
+  <div class="names">formerly per0xide, gr3mlol, tresstop</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Aug 2020 - Nov 2021</div>
+  <ul>
+    <li><a href="https://soundcloud.com/tresstop"><span class="sc">SoundCloud</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">originally created in 2020 during the "dante red” bitcrush trend on SoundCloud. i also used it as an alias for posting beats on YouTube at the time. the original SoundCloud account has since been deleted and the URL now belongs to an archive of tracks tied to gremlife aswell as c4pri</li></ul>
+</section>
+
+<!-- <section class="project">
+  <div class="label">chlorine99</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active April 2021 - Jun 2021</div>
+  <ul>
+    <li class="soft" style="margin-top:0.3rem">you not hearing nothing about this one 🤣🤣🤣</li></ul>
+</section> -->
+
+<div class="section-title" id="collectives">collectives</div>
+
+<section class="project">
+  <div class="label">afflicted</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Aug 2022 – Nov 2024</div>
+  <ul>
+    <li><a href="https://soundcloud.com/1afflicted"><span class="sc">SoundCloud</span></a></li>
+    <li><a href="https://open.spotify.com/artist/2FoKEtWNsW0TbstjNSZY86"><span class="spt">Spotify</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">afflicted was a collective i was heavily associated with alongside members like crusey, crusafix, Alyx Trick, isai, akkiro, deepinparis, mycorpsebride and many others who were removed through the years. i joined in late 2022 as c4pri but all of my work is now credited to lynU</li></ul>
+</section>
+
+<section class="project">
+  <div class="label">#3six0</div>
+  <div class="names">aka 360partychat</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Jun 2024 – 2025</div>
+  <ul>
+    <li><a href="https://soundcloud.com/3six03six03six0"><span class="sc">SoundCloud</span></a></li>
+    <li><a href="https://open.spotify.com/artist/5APK55HaYPWbmQQOFSA54F"><span class="spt">Spotify</span></a></li>
+    <li class="soft" style="margin-top:0.3rem">#3six0 was another collective and technically a follow-up to afflicted. during this era we tried moving away from the “digicore” genre that afflicted was primarily known for and tried to experiment with different sounds, though it probably ended up becoming the direction afflicted would've gone in naturally</li></ul>
+  </section>
+
+</div>
+
+</body>
+</html>

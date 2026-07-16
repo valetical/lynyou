@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lynU</title>
+<link rel="icon" type="image/png" href="icon.png">
+
+<!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣴⣦⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⣿⠿⠿⠿⠿⣿⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣾⣿⣿⡿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢿⣿⣿⣶⡀⠀⠀⠀⠀
+⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⠀⣶⣶⣶⣶⡆⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣦⠀⠀⠀
+⠀⠀⣼⣿⣿⠋⠀⠀⠀⠀⠀⠛⠛⢻⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣧⠀⠀
+⠀⢸⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡇⠀
+⠀⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⠀
+⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡟⢹⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⣹⣿⣿⠀
+⠀⣿⣿⣷⠀⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⢻⣿⣿⡄⠀⠀⠀⠀⠀⠀⣿⣿⡿⠀
+⠀⢸⣿⣿⡆⠀⠀⠀⠀⣴⣿⡿⠃⠀⠀⠀⠈⢿⣿⣷⣤⣤⡆⠀⠀⣰⣿⣿⠇⠀
+⠀⠀⢻⣿⣿⣄⠀⠀⠾⠿⠿⠁⠀⠀⠀⠀⠀⠘⣿⣿⡿⠿⠛⠀⣰⣿⣿⡟⠀⠀
+⠀⠀⠀⠻⣿⣿⣧⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⠏⠀⠀⠀
+⠀⠀⠀⠀⠈⠻⣿⣿⣷⣤⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⠟⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⠿⠋⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠛⠛⠛⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+active since 5/12/26
+-->
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("Texture_other_060.gif");
+  background-repeat: repeat;
+
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body {
+  background-image: radial-gradient(circle at top, #0a0a0a 0%, #000 60%);
+  color: #aaa;
+  font-family: 'consolas', monospace;
+  font-size: 22px;
+  line-height: 1.3;
+  max-width: 750px;
+  margin: 0rem auto 4rem auto;
+  padding-top: 20px;
+  cursor: url("lyncursorarrow.png"), auto;
+}
+  
+html {
+  font-size: 20px;
+}
+
+.scrollwrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.85);
+  border-bottom: 1px solid #1e1c1b;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.scrollstuff {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrolling 10s linear infinite;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@keyframes scrolling {
+
+    from {
+
+        transform: translateX(0);
+
+    }
+
+    to {
+
+        transform: translateX(-100%);
+
+    }
+
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.15s ease;
+  
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.25);
+  filter: brightness(1.6);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: url("lyncursorlink.png"), auto;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.name {
+  color: #fff;
+  font-size: 26px;
+}
+
+.soft {
+  color: #777;
+  font-size: 18px;
+}
+
+.soft2 {
+  color: #444;
+  margin-top: 0.1rem;
+  margin-bottom: 0.8rem;
+  font-size: 26px;
+}
+
+.soft3 {
+  color: #777;
+  font-size: 24px;
+}
+
+.nameold {
+  color: #444;
+  margin-top: 0.1rem;
+  margin-bottom: 0.8rem;
+  font-size: 16px;
+}
+
+.label {
+  color: #fff;
+  margin-bottom: 0.1rem;
+  font-size: 24px;
+}
+
+.archive-link {
+  color: #444;
+  font-style: italic;
+  font-size: 18px;
+  padding-bottom: 1px;
+  margin-top: 0.2rem;
+}
+
+.archive-link:hover {
+  color: #fff;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.yt { color: #ff0033; }
+.sc { color: #ff740b; }
+.twt { color: #00a1ff; }
+.spt { color: #1ed760; }
+.apl { color: #ff4e6b; }
+.ig { color: #e4405f; }
+.bc { color: #61929c; }
+.ph { color: #72a9e0; }
+.tik { color: #ff0050; }
+.tok { color: #00f2ea; }
+.sc, .yt, .twt, .spt, .apl, .ig, .bc, .ph, .tik, .tok {font-size: 22px;text-decoration: underline;text-decoration-skip-ink: auto;}
+
+.divider { border: none; border-top: 1px solid #1e1c1b; margin: 1.3rem 0; }
+.meta { margin-top: 3.5rem; color: #333; font-size: 14px; }
+.logo-row img {height: 50px;width: auto;}
+.whitetext {filter: brightness(0) invert(1);}
+section {transition: transform 0.15s ease, filter 0.15s ease;}
+section:hover {transform: translateY(-2px);}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="scroll-wrap"><div class="scrollstuff">★ (^_^) ★</div></div>
+  
+<div class="logo-row"><a href="https://www.youtube.com/watch?v=q3uXXh1sHcI"><img src="http://dl7.glitter-graphics.net/pub/517/517117grkpbyjcvm.gif" width="40" height="40"></a>
+<img src="lynmicro.png" class="whitetext">
+</div>
+
+<div class="soft3">they/them, 17 years old</div>
+<a href="archive.html" class="archive-link">other projects / archive →</a>
+
+<div class="projects">
+
+  <section>
+    <div class="label" style="margin-bottom: 0.8rem;">lynU</div>
+<!--    <div class="nameold">aka 14106lyn, lynion, valetical, c4pri</div> -->
+
+    <ul>
+      <li><a href="https://soundcloud.com/lynyou"><span class="sc">SoundCloud</span></a></li>
+      <li><a href="https://instagram.com/lynyouu"><span class="ig">Instagram</span></a></li>
+      <li><a href="https://music.apple.com/in/artist/lynu/1810236747"><span class="apl">Apple Music</span></a></li>
+      <li><a href="https://open.spotify.com/artist/2STKH6v7x4yEzQqToCsapM"><span class="spt">Spotify</span></a></li>
+      <li><a href="https://youtube.com/@lynyouu"><span class="yt">YouTube</span></a></li>
+      <li>
+        <a href="https://tiktok.com/@lynyouu1">
+          <span class="tik">Tik</span><span class="tok">Tok</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="label" style="margin-bottom: 0.8rem;">red letter diary</div>
+<!--    <div class="nameold">aka a red letter day, katie kross</div> -->
+
+    <ul>
+      <li><a href="https://soundcloud.com/redletterdiary"><span class="sc">SoundCloud</span></a></li>
+      <li><a href="https://instagram.com/redletterdiary"><span class="ig">Instagram</span></a></li>
+      <li><a href="https://music.apple.com/in/artist/red-letter-diary/1811783669"><span class="apl">Apple Music</span></a></li>
+      <li><a href="https://open.spotify.com/artist/2YWYSbsOOwBcDgwVK1DDI0"><span class="spt">Spotify</span></a></li>
+    </ul>
+  </section>
+
+</div>
+
+<hr class="divider">
+
+<section>
+
+<ul>
+  <li>
+    <a href="https://twitter.com/lynyouu">
+      <span class="twt">Twitter</span>
+    </a>
+    <span class="soft"> - don't really post much about music</span>
+  </li>
+
+  <li>
+    <a href="https://lynu.bandcamp.com">
+      <span class="bc">Bandcamp</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://store.lynyou.com">
+      <span class="ph">Payhip</span>
+    </a>
+    <span class="soft"> - FLPs, vocal presets</span>
+  </li>
+</ul>
+
+</section>
+
+<section>
+
+<ul>
+  <li>
+  <span style="color:#444;">Email:</span>
+  <a href="mailto:14106lyn@gmail.com">
+    <span style="text-decoration: underline;">
+      14106lyn@gmail.com
+    </span>
+  </a>
+</li>
+  <li>
+    <span style="color:#7289da;">Discord:</span>
+    <a id="copydc" class="dccopy">lynyou</a>
+  </li>
+</ul>
+
+</section>
+
+<script>
+const el = document.getElementById("copydc");
+
+el.onclick = async () => {
+  await navigator.clipboard.writeText("lynyou");
+
+  const old = el.textContent;
+  el.textContent = "copied!";
+
+  setTimeout(() => {
+    el.textContent = old;
+  }, 800);
+};
+</script>
+
+<div class="meta">
+  <span>© <span id="year"></span> lynU</span>
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
