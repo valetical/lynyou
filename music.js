@@ -66,7 +66,7 @@ let track_list = [
 	{
 		name: "Untitled 12/23/22 9:50PM",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/harbor_128kbps_edit.mp3",
-		dl: "https://soundcloud.com/c4lol/harbor"
+		dl: "https://file.garden/ad5_FaJMmVnp7v37/harbor_128kbps_edit.mp3"
 	},
 	{
 		name: "Untitled 12/25/22 4:56AM",

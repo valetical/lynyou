@@ -370,11 +370,16 @@ active since 5/12/26
 
       .box {
         position: relative;
-        border: 3px solid white;
-        padding: 25px;
+        padding: 20px;
         margin-top: 20px;
         background: rgba(0, 0, 0, 1);
-        min-height: 400px;
+        background-clip: padding-box;
+        border: 25px solid transparent;
+        border-image: url("../images/textbox.gif") 15 / 25px repeat;
+        border-image-slice: 27.6% fill;
+        box-sizing: border-box;
+        image-rendering: pixelated;
+        color: white;
       }
     </style>
   </head>
@@ -392,7 +397,7 @@ active since 5/12/26
       </div>
 
       <div class="soft3">they/them, 17 years old</div>
-      <a href="archive.html" class="archive-link">other projects / archive →</a>
+      <a href="https://lynyou.com/archive" class="archive-link">other projects / archive →</a>
 
       <!--Music player-->
       <div id="musicplayer" style="margin-bottom: 10px; margin-right: 0.5%">
