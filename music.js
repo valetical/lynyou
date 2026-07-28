@@ -56,12 +56,12 @@ let track_list = [
 	{
 		name: "sienna - lizard food ┌(＾＾)┘",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/lizardfood_128kbps_edit.mp3",
-		dl: "https://soundcloud.com/siennacell/lizard-food",
+		dl: "https://soundcloud.com/siennacell/lizard-food"
 	},
 	{
 		name: "Untitled 2/16/25 3:24AM",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/rldafraid_128kbps_edit.mp3",
-		dl: "https://file.garden/ad5_FaJMmVnp7v37/rldafraid_128kbps_edit.mp3",
+		dl: "https://file.garden/ad5_FaJMmVnp7v37/rldafraid_128kbps_edit.mp3"
 	},
 	{
 		name: "Untitled 12/23/22 9:50PM",
@@ -72,7 +72,7 @@ let track_list = [
 		name: "Untitled 12/25/22 4:56AM",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/fade2gray_128kbps_edit.mp3",
 		dl: "https://soundcloud.com/c4lol/fade-to-gray"
-	},
+	}
 ];
 
 function loadTrack(track_index) {

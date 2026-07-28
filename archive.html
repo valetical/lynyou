@@ -164,7 +164,6 @@
       .tik { color: #ff0050; }
       .tok { color: #00f2ea; }
       .sc, .yt, .twt, .spt, .apl, .ig, .bc, .ph, .tik, .tok {
-        text-decoration: underline;
         text-decoration-skip-ink: auto;
       }
 
@@ -176,15 +175,21 @@
           border: 3px solid white;
           padding: 25px;
           /*margin-top: 20px;*/
-          background: rgba(0,0,0,0.75);
+          background: rgba(0,0,0,1);
           /*min-height: 400px;*/
         height: fit-content;
+      }
+
+      .meta {
+        margin-top: 0.2rem;
+        color: #333;
+        font-size: 16px;
       }
     </style>
   </head>
 
   <body>
-    <a href="index.html" class="back">← back</a>
+    <a href="https://lynyou.com" class="back">← back</a>
 
     <div style="margin-top: 1.8rem">
       <span class="name">other projects / archive</span>
@@ -238,7 +243,9 @@
       </section>
 
       <section class="project box">
-        <div class="label">yuzu</div>
+        <a href="https://lynyou.com/yuzu">
+          <div class="label">yuzu</div>
+        </a>
         <div class="names">aka yuzuberri</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Dec 2025 – now</div>
         <ul>
@@ -474,5 +481,13 @@
         </ul>
       </section>
     </div>
+
+    <div class="meta">
+      <span>© <span id="year"></span> lynU</span>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
