@@ -841,7 +841,7 @@ const releases = [
   },
 
   {
-    title: "it's all mine",
+    title: "always",
     cover: "https://i1.sndcdn.com/artworks-PLaefRxturBojyjy-xJ6dKg-t500x500.jpg",
     date: "9/28/22",
     type: "Collab",
