@@ -1,6 +1,9 @@
 const artistlinks = {
   lynU: "https://soundcloud.com/lynyou",
+  valetical: "https://soundcloud.com/v_letical",
   yuzu: "https://soundcloud.com/yuzuberri",
+  c4pri: "https://soundcloud.com/c4v",
+
   rel: "https://soundcloud.com/2rel",
   crusafix: "https://soundcloud.com/1crusafix",
   akkiro: "https://soundcloud.com/7akkiro",
@@ -8,6 +11,9 @@ const artistlinks = {
   deepinparis: "https://soundcloud.com/deepinparis",
   girlsynth: "https://soundcloud.com/fruityeq",
   rhekdens: "https://soundcloud.com/rhekdens",
+  yarn: "https://soundcloud.com/yarnn",
+  snoa: "https://soundcloud.com/snoa247",
+  sai: "https://soundcloud.com/saiwai",
   "Alyx Trick": "https://alyxtrick.com",
   "ellie mills": "https://soundcloud.com/elliemillss",
   xaev: "https://unironical.ly",
@@ -16,10 +22,8 @@ const artistlinks = {
   Camellia: "https://cametek.jp",
   urchin_ltd: "https://x.com/urchin_ltd",
   inci0: "https://hachinemu.com",
-  "#3six0": "https://soundcloud.com/3six03six03six0",
   "Jonathan Coulton": "https://www.jonathancoulton.com",
   Mameyudoufu: "https://x.com/mameyudoufu",
-  MEGAREX: "https://megarex.jp",
   vylus: "https://soundcloud.com/vylus",
   slyde: "https://soundcloud.com/slydeways",
   mycorpsebride: "https://soundcloud.com/orochimara",
@@ -28,26 +32,51 @@ const artistlinks = {
   "prkr blu": "https://soundcloud.com/prkrblu",
   erdo: "https://soundcloud.com/erdo",
   breakupbreakdown: "https://soundcloud.com/breakupbreakdown",
-  afflicted: "https://soundcloud.com/1afflicted",
   kay: "https://soundcloud.com/3eight9",
   yinon: "https://soundcloud.com/yinons",
-  c4pri: "https://soundcloud.com/c4v",
+  d0llywood1: "https://soundcloud.com/d0llywood1",
   dime: "https://soundcloud.com/proddime",
   osaka: "https://soundcloud.com/forhampy",
-  valetical: "https://soundcloud.com/v_letical",
+  scruff: "https://soundcloud.com/scrufff",
+  cewer: "https://soundcloud.com/cewer",
+  "*67": "https://soundcloud.com/o67o",
+  shyburial: "https://soundcloud.com/yuki-pons",
+  heroinsick: "https://soundcloud.com/heroinsick",
+  nejdos: "https://www.youtube.com/channel/UCD05UM9ao2K6-EyZVzxDwrQ",
   cld: "https://www.cldxp.net",
+  elxnce: "https://soundcloud.com/elxnce",
   imsg: "https://soundcloud.com/imsg",
   "Sira Yan": "https://soundcloud.com/sirayan",
+  sadboyshaq: "https://soundcloud.com/sadboyshaq",
+  kurtains: "https://soundcloud.com/kurtains",
+
+  afflicted: "https://soundcloud.com/1afflicted",
+  "#3six0": "https://soundcloud.com/3six03six03six0",
+  MEGAREX: "https://megarex.jp",
+
   elwood: "https://soundcloud.com/elw00d",
   sega73: "https://soundcloud.com/sega73",
   reallerr: "https://soundcloud.com/reallerr",
   homecollection49: "https://soundcloud.com/homecollection49",
   reali: "https://soundcloud.com/rreali",
+
   h3artch3rades: "https://soundcloud.com/h3artch3rades",
   awe: "https://whyawe.carrd.co/"
 };
 
 const releases = [
+  /*  
+      {
+    title: "Façade*Demo",
+    cover: "https://i1.sndcdn.com/artworks-BNGeE22z1NoIlQod-z9FrOQ-t500x500.jpg",
+    date: "12/31/26",
+    type: "Single",
+    runtime: "2:18",
+    platforms: ["sc"],
+    rating: 3,
+    credits: ["lynU - production"]
+  },
+  */
   {
     title: "Flower Man",
     cover: "https://i1.sndcdn.com/artworks-NhvdM6zjJRazQkbm-Pht19w-t500x500.jpg",
@@ -97,7 +126,18 @@ const releases = [
     rating: 3,
     credits: ["Alyx Trick - production, vocals", "lynU - production, vocals"]
   },
-
+  /*
+    {
+    title: "1-in-6",
+    cover: "https://i1.sndcdn.com/artworks-JacMOIvaaceC4BLf-8XUP5g-t500x500.jpg",
+    date: "5/31/26",
+    type: "Single",
+    runtime: "2:15",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: ["lynU - production, vocals","crusey - vocals"]
+  },
+*/
   {
     title: "Tell me",
     cover: "https://i1.sndcdn.com/artworks-Mz5Hg0zC7HaAgEgO-R46yzA-t500x500.jpg",
@@ -151,6 +191,17 @@ const releases = [
       ["Sacrifice", "3:31"],
       ["Take a chance", "2:00"]
     ]
+  },
+
+  {
+    title: "#Injuries freestyle",
+    cover: "https://i1.sndcdn.com/artworks-OkRbSIu2Rs9k0ayc-ILaAjA-t500x500.jpg",
+    date: "2/28/26",
+    type: "Single",
+    runtime: "1:21",
+    platforms: ["sc"],
+    rating: 2,
+    credits: ["lynU - vocals", "xaev - production"]
   },
 
   {
@@ -850,5 +901,214 @@ const releases = [
     platforms: ["sc"],
     rating: 3,
     credits: ["osaka - production", "valetical - production"]
+  },
+  {
+    title: "go away",
+    cover: "https://i1.sndcdn.com/artworks-zmayGVOTNwKPczWw-tHs2Vg-t500x500.jpg",
+    date: "8/21/22",
+    type: "Single",
+    runtime: "2:29",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 1,
+    credits: ["c4pri - production, vocals"]
+  },
+  {
+    title: "i'll never change",
+    cover: "https://i1.sndcdn.com/artworks-3H4ozJ2SCyOFoyVS-qlB8jQ-t500x500.jpg",
+    date: "8/9/22",
+    type: "Single",
+    runtime: "2:12",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 1,
+    credits: ["c4pri - production, vocals"]
+  },
+  {
+    title: "serious song 👍",
+    cover: "https://i1.sndcdn.com/artworks-v9JhkyBJuWC8yyDh-c9DcKg-t500x500.jpg",
+    date: "7/17/22",
+    type: "Single",
+    runtime: "1:58",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - vocals", "funny - production"]
+  },
+  {
+    title: "cry about it 😹",
+    cover: "https://i1.sndcdn.com/artworks-p9XhOgxL2e4x7N4N-tMG1rg-t500x500.jpg",
+    date: "5/15/22",
+    type: "Single",
+    runtime: "2:54",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: ["c4pri - production, vocals", "funny - vocals", "noara - vocals"]
+  },
+  {
+    title: "kite",
+    cover: "https://i1.sndcdn.com/artworks-m6eZKgIF0ycJi4xx-2EPNhw-t500x500.jpg",
+    date: "2/21/22",
+    type: "Single",
+    runtime: "1:53",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - vocals", "h4rt - vocals", "dime - production"]
+  },
+  {
+    title: "watevr",
+    cover: "https://i1.sndcdn.com/artworks-ZyLdkos3umVzKEME-5vE4Jg-t500x500.jpg",
+    date: "11/20/21",
+    type: "Single",
+    runtime: "1:42",
+    platforms: ["sc"],
+    rating: 3,
+    credits: ["c4pri - vocals", "elxnce - production", "4am - production"]
+  },
+  {
+    title: "i dont wanna title this so gn",
+    cover: "https://i1.sndcdn.com/artworks-obdoaFgXiYetoTFI-jj3yQg-t500x500.jpg",
+    date: "9/10/21",
+    type: "Single",
+    runtime: "1:05",
+    platforms: ["sc"],
+    rating: 1,
+    credits: ["c4pri - vocals", "sai - production"]
+  },
+  {
+    title: "minute",
+    cover: "https://i1.sndcdn.com/artworks-P09xajm5eLUzcCZM-p2Gt5w-t500x500.jpg",
+    date: "7/31/21",
+    type: "Single",
+    runtime: "2:07",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - vocals", "yarn - vocals", "snoa - vocals", "sai - production"]
+  },
+  {
+    title: "nothing",
+    cover: "https://i1.sndcdn.com/artworks-BWjNXe452b9lL3Es-1W83vQ-t500x500.jpg",
+    date: "3/31/21",
+    type: "Single",
+    runtime: "1:52",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - production, vocals", "cxzzi - production"]
+  },
+
+  {
+    title: "highscore",
+    cover: "https://i1.sndcdn.com/artworks-9JRJEDymBJufvWzQ-1FxwHw-t500x500.jpg",
+    date: "3/25/21",
+    type: "Single",
+    runtime: "3:12",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - production, vocals", "scruff - production, vocals", "sadboyshaq - vocals"]
+  },
+  {
+    title: "my life",
+    cover: "https://i1.sndcdn.com/artworks-zz9WRiMXeI997HhI-YY8uoQ-t500x500.jpg",
+    date: "3/20/21",
+    type: "Single",
+    runtime: "1:18",
+    platforms: ["sc"],
+    rating: 1,
+    credits: ["c4pri - vocals"]
+  },
+  {
+    title: "mad",
+    cover: "https://i1.sndcdn.com/artworks-avqw7HCatizDGSqR-SKW5Vg-t500x500.jpg",
+    date: "2/26/21",
+    type: "Single",
+    runtime: "1:27",
+    platforms: ["sc"],
+    rating: 1,
+    credits: ["c4pri - production, vocals", "cewer - vocals"]
+  },
+  {
+    title: "❆shine❆",
+    cover: "https://i1.sndcdn.com/artworks-xNzzYePWOMpflDL4-fzqy9Q-t500x500.jpg",
+    date: "1/20/21",
+    type: "Single",
+    runtime: "3:36",
+    platforms: ["sc"],
+    rating: 1,
+    credits: [
+      "c4pri - vocals",
+      "scruff - vocals",
+      "cewer - vocals",
+      "1icy - vocals",
+      "*67 - vocals",
+      "lethal- vocals",
+      "shyburial - production"
+    ]
+  },
+  {
+    title: "upset",
+    cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/960px-Black_colour.jpg",
+    date: "11/17/20",
+    type: "Single",
+    runtime: "1:27",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - vocals", "heroinsick - production"]
+  },
+  {
+    title: "i don't think i need you",
+    cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/960px-Black_colour.jpg",
+    date: "9/8/20",
+    type: "Single",
+    runtime: "2:39",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - vocals", "nejdos - production"]
+  },
+  {
+    title: "iphone",
+    cover: "https://i1.sndcdn.com/artworks-9FadTu9cj3YhrLQe-e4CIeg-t500x500.jpg",
+    date: "8/9/20",
+    type: "Single",
+    runtime: "1:12",
+    platforms: ["sc"],
+    rating: 2,
+    credits: ["c4pri - vocals", "Parry Gripp - composer"]
+  },
+  {
+    title: "talk talk [cover]",
+    cover: "https://i1.sndcdn.com/artworks-QQfNfzmsY976pksn-mMsTcQ-t500x500.jpg",
+    date: "7/24/20",
+    type: "Single",
+    runtime: "1:06",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 1,
+    credits: ["c4pri - vocals", "kurtains - composer"]
+  },
+  {
+    title: "idgaf",
+    cover: "https://i1.sndcdn.com/artworks-zokIYeNPGvsk7dIH-JgiQdg-t500x500.jpg",
+    date: "6/27/20",
+    type: "Single",
+    runtime: "1:07",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - vocals", "tommiie.xo - production"]
+  },
+  {
+    title: "swag",
+    cover: "https://i1.sndcdn.com/artworks-dO8rmZT9v99GzX9A-DTHumA-t500x500.jpg",
+    date: "6/22/20",
+    type: "Single",
+    runtime: "0:49",
+    platforms: ["sc"],
+    rating: 3,
+    credits: ["c4pri - vocals", "tommiie.xo - production"]
+  },
+  {
+    title: "❆shine❆",
+    cover: "https://i1.sndcdn.com/artworks-cx61z2gPyynSOy8X-sjGgPg-t500x500.jpg",
+    date: "6/4/20",
+    type: "Single",
+    runtime: "1:45",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 1,
+    credits: ["c4pri - vocals", "shyburial - production"]
   }
 ];
