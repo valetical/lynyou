@@ -22,11 +22,11 @@ const platformInfo = {
     class: "bc"
   },
   mrx168buy: {
-    name: "'mrx-168' purchase",
+    name: "'MRX-168' purchase",
     url: "https://www.diverse.direct/megarex/mrx-168"
   },
   mrx168info: {
-    name: "'mrx-168' info",
+    name: "'MRX-168' info",
     url: "https://www.megarex.info/mrx-168bce"
   },
   twc2026map: {
