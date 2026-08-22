@@ -358,7 +358,6 @@ section:hover {
 .box {
     position: relative;
     padding: 20px;
-    margin-top: 20px;
     background: rgba(0, 0, 0, 1);
     background-clip: padding-box;
     border: 25px solid transparent;
