@@ -87,7 +87,7 @@ const releases = [
   },
 
   {
-    title: "It's You (feat. lynU)",
+    title: "It's You",
     cover: "https://i1.sndcdn.com/artworks-MLaLnAjj3DUPRofq-wQiEXg-t500x500.jpg",
     date: "6/5/26",
     type: "Collab",
@@ -153,7 +153,7 @@ const releases = [
   },
 
   {
-    title: "take a trip (feat. lynU)",
+    title: "take a trip",
     cover: "https://i1.sndcdn.com/artworks-0Qc7vMQlfDRHQdGl-VWTb3Q-t500x500.jpg",
     date: "1/26/26",
     type: "Collab",
@@ -197,7 +197,7 @@ const releases = [
   },
 
   {
-    title: "blinded (feat. lynU)",
+    title: "blinded",
     cover: "https://i1.sndcdn.com/artworks-vPkTHVlHbPj3rrwO-lWaT9g-t1080x1080.jpg",
     date: "10/31/25",
     type: "Collab",
@@ -219,7 +219,7 @@ const releases = [
   },
 
   {
-    title: "something i can fix (feat. lynU)",
+    title: "something i can fix",
     cover: "https://i1.sndcdn.com/artworks-sbykKYTz23FTRyld-t3MgzQ-t500x500.jpg",
     date: "9/22/25",
     type: "Collab",
@@ -241,7 +241,7 @@ const releases = [
   },
 
   {
-    title: "birds that can fly (feat. lynU)",
+    title: "birds that can fly",
     cover: "https://i1.sndcdn.com/artworks-IwK5gcVLGQCQMaFm-bVVuag-t500x500.png",
     date: "9/19/25",
     type: "Collab",
@@ -667,7 +667,7 @@ const releases = [
   },
 
   {
-    title: "distract (feat. lynU)",
+    title: "distract",
     cover: "https://i1.sndcdn.com/artworks-YAVJ9egLz7kD2i9K-nom71Q-t500x500.jpg",
     date: "12/29/23",
     type: "Collab",
