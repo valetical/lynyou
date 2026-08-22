@@ -20,6 +20,19 @@ const platformInfo = {
   bc: {
     name: "bandcamp",
     class: "bc"
+  },
+  mrx168buy: {
+    name: "'mrx-168' purchase",
+    url: "https://www.diverse.direct/megarex/mrx-168"
+  },
+  mrx168info: {
+    name: "'mrx-168' info",
+    url: "https://www.megarex.info/mrx-168bce"
+  },
+  twc2026map: {
+    name: "osu! beatmap",
+    class: "osu",
+    url: "https://osu.ppy.sh/beatmapsets/2538002"
   }
 };
 
@@ -54,7 +67,21 @@ releases.forEach(function (release) {
 
         if (!info) return "";
 
-        return `<div><span class="${info.class}">${info.name}</span></div>`;
+        if (info.url) {
+          return `
+          <div>
+            <a href="${info.url}" target="_blank">
+              <span class="${info.class || ""}">${info.name}</span>
+            </a>
+          </div>
+        `;
+        }
+
+        return `
+        <div>
+          <span class="${info.class}">${info.name}</span>
+        </div>
+      `;
       })
       .join("");
   }
@@ -80,10 +107,10 @@ releases.forEach(function (release) {
 
       if (artistlinks[artist]) {
         return `
-      <div class="credits">
-        <a href="${artistlinks[artist]}" target="_blank">${artist}</a> - ${role}
-      </div>
-    `;
+        <div class="credits">
+          <a href="${artistlinks[artist]}" target="_blank">${artist}</a>${role ? " - " + role : ""}
+        </div>
+      `;
       }
 
       return `<div class="credits">${credit}</div>`;

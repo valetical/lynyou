@@ -6,6 +6,7 @@ const artistlinks = {
   akkiro: "https://soundcloud.com/7akkiro",
   isai: "https://soundcloud.com/omgisai",
   deepinparis: "https://soundcloud.com/deepinparis",
+  girlsynth: "https://soundcloud.com/fruityeq",
   rhekdens: "https://soundcloud.com/rhekdens",
   "Alyx Trick": "https://alyxtrick.com",
   "ellie mills": "https://soundcloud.com/elliemillss",
@@ -16,7 +17,33 @@ const artistlinks = {
   urchin_ltd: "https://x.com/urchin_ltd",
   inci0: "https://hachinemu.com",
   "#3six0": "https://soundcloud.com/3six03six03six0",
-  "Jonathan Coulton": "https://www.jonathancoulton.com"
+  "Jonathan Coulton": "https://www.jonathancoulton.com",
+  Mameyudoufu: "https://x.com/mameyudoufu",
+  MEGAREX: "https://megarex.jp",
+  vylus: "https://soundcloud.com/vylus",
+  slyde: "https://soundcloud.com/slydeways",
+  mycorpsebride: "https://soundcloud.com/orochimara",
+  crusey: "https://soundcloud.com/cruseyyyy",
+  "w!ldflwr": "https://soundcloud.com/ilovewldflwr",
+  "prkr blu": "https://soundcloud.com/prkrblu",
+  erdo: "https://soundcloud.com/erdo",
+  breakupbreakdown: "https://soundcloud.com/breakupbreakdown",
+  afflicted: "https://soundcloud.com/1afflicted",
+  kay: "https://soundcloud.com/3eight9",
+  yinon: "https://soundcloud.com/yinons",
+  c4pri: "https://soundcloud.com/c4v",
+  dime: "https://soundcloud.com/proddime",
+  osaka: "https://soundcloud.com/forhampy",
+  valetical: "https://soundcloud.com/v_letical",
+  cld: "https://www.cldxp.net",
+  imsg: "https://soundcloud.com/imsg",
+  "Sira Yan": "https://soundcloud.com/sirayan",
+
+  elwood: "https://soundcloud.com/elw00d",
+  sega73: "https://soundcloud.com/sega73",
+  reallerr: "https://soundcloud.com/reallerr",
+  homecollection49: "https://soundcloud.com/homecollection49",
+  reali: "https://soundcloud.com/rreali"
 };
 
 const releases = [
@@ -24,7 +51,7 @@ const releases = [
     title: "Flower Man",
     cover: "https://i1.sndcdn.com/artworks-NhvdM6zjJRazQkbm-Pht19w-t500x500.jpg",
     date: "8/14/26",
-    type: "Single",
+    type: "Remix",
     runtime: "3:21",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
@@ -49,6 +76,28 @@ const releases = [
   },
 
   {
+    title: "##nauseous",
+    cover: "https://i1.sndcdn.com/artworks-yngq0sm1tpTKYidp-NYVg0g-t500x500.jpg",
+    date: "7/14/26",
+    type: "Single",
+    runtime: "2:10",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - vocals", "dime - production, vocals", "crusafix - vocals"]
+  },
+
+  {
+    title: "It's You (feat. lynU)",
+    cover: "https://i1.sndcdn.com/artworks-MLaLnAjj3DUPRofq-wQiEXg-t500x500.jpg",
+    date: "6/5/26",
+    type: "Collab",
+    runtime: "3:06",
+    platforms: ["sc", "spt", "apl", "yt", "bc"],
+    rating: 3,
+    credits: ["Alyx Trick - production, vocals", "lynU - production, vocals"]
+  },
+
+  {
     title: "Tell me",
     cover: "https://i1.sndcdn.com/artworks-Mz5Hg0zC7HaAgEgO-R46yzA-t500x500.jpg",
     date: "5/1/26",
@@ -60,10 +109,28 @@ const releases = [
   },
 
   {
+    title: "ON.UR.MARKS...【TWC 2026 Finals Tiebreaker】",
+    cover: "https://i1.sndcdn.com/artworks-SsoWS8COylbWyLLH-BLiiTw-t500x500.jpg",
+    date: "4/12/26",
+    type: "Single",
+    runtime: "7:31",
+    platforms: ["sc", "yt", "twc2026map"],
+    rating: 1,
+    credits: [
+      "elwood - production",
+      "sega73 - production",
+      "reallerr - production",
+      "homecollection49 - production",
+      "reali - production",
+      "lynU - production"
+    ]
+  },
+
+  {
     title: "Want You Gone [cover]",
     cover: "https://i1.sndcdn.com/artworks-GXrlUU4hJya9C9cq-0WGPPA-t500x500.jpg",
     date: "4/11/26",
-    type: "Single",
+    type: "Cover",
     runtime: "2:18",
     platforms: ["sc"],
     rating: 2,
@@ -86,6 +153,17 @@ const releases = [
   },
 
   {
+    title: "take a trip (feat. lynU)",
+    cover: "https://i1.sndcdn.com/artworks-0Qc7vMQlfDRHQdGl-VWTb3Q-t500x500.jpg",
+    date: "1/26/26",
+    type: "Collab",
+    runtime: "2:55",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 1,
+    credits: ["Sira Yan - production, vocals", "lynU - vocals", "yinon - additional vocals", "kay - production"]
+  },
+
+  {
     title: "sideFX",
     cover: "https://i1.sndcdn.com/artworks-ovJx0plNDdGK5eUF-NPCwEA-t500x500.jpg",
     date: "12/26/25",
@@ -97,14 +175,58 @@ const releases = [
   },
 
   {
+    title: "reflection, (lynU Remix)",
+    cover: "https://i1.sndcdn.com/artworks-HslNLLRoTkdM0dOV-0EzMYw-t500x500.jpg",
+    date: "12/19/25",
+    type: "Remix",
+    runtime: "2:50",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: ["Alyx Trick - production, vocals", "girlsynth - production", "lynU - remixer"]
+  },
+
+  {
     title: "monitoring 【lynU bootleg】",
     cover: "https://i1.sndcdn.com/artworks-oGPy857lXxOx4eBV-MyGc1w-original.png",
-    date: "12/26/25",
+    date: "11/7/25",
     type: "Single",
     runtime: "2:13",
     platforms: ["sc"],
     rating: 3,
     credits: ["DECO*27 - production", "Hatsune Miku - vocals", "lynU - production, remixer"]
+  },
+
+  {
+    title: "blinded (feat. lynU)",
+    cover: "https://i1.sndcdn.com/artworks-vPkTHVlHbPj3rrwO-lWaT9g-t1080x1080.jpg",
+    date: "10/31/25",
+    type: "Collab",
+    runtime: "2:37",
+    platforms: ["sc", "spt", "apl", "yt", "bc"],
+    rating: 2,
+    credits: ["Alyx Trick - production, vocals", "lynU - vocals"]
+  },
+
+  {
+    title: "CometBlast (NOTHINGLEFT2FEAR)",
+    cover: "https://i1.sndcdn.com/artworks-8QzU84ntwyNNcKO0-ZH2I5A-t500x500.jpg",
+    date: "10/19/25",
+    type: "Collab",
+    runtime: "3:59",
+    platforms: ["sc", "mrx168info", "mrx168buy"],
+    rating: 3,
+    credits: ["MEGAREX", "xaev - production", "lynU - vocals", "Mameyudoufu - mastering"]
+  },
+
+  {
+    title: "something i can fix (feat. lynU)",
+    cover: "https://i1.sndcdn.com/artworks-sbykKYTz23FTRyld-t3MgzQ-t500x500.jpg",
+    date: "9/22/25",
+    type: "Collab",
+    runtime: "5:00",
+    platforms: ["sc"],
+    rating: 3,
+    credits: ["slyde - production", "vylus - mastering", "lynU - vocals"]
   },
 
   {
@@ -116,6 +238,17 @@ const releases = [
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
     credits: ["lynU - production, vocals", "Alyx Trick - vocals"]
+  },
+
+  {
+    title: "birds that can fly (feat. lynU)",
+    cover: "https://i1.sndcdn.com/artworks-IwK5gcVLGQCQMaFm-bVVuag-t500x500.png",
+    date: "9/19/25",
+    type: "Collab",
+    runtime: "1:46",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 1,
+    credits: ["h3artch3rades - vocals", "lynU - vocals", "awe - production"]
   },
 
   {
@@ -249,12 +382,7 @@ const releases = [
     runtime: "1:48",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: [
-      "#3six0 - collective",
-      "lynU - production, vocals",
-      "Alyx Trick - vocals, artwork",
-      "deepinparis - vocals"
-    ]
+    credits: ["#3six0", "lynU - production, vocals", "Alyx Trick - vocals, artwork", "deepinparis - vocals"]
   },
 
   {
@@ -298,7 +426,7 @@ const releases = [
     runtime: "1:42",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["#3six0 - collective", "lynU - production, vocals", "crusafix - vocals"]
+    credits: ["#3six0", "lynU - production, vocals", "crusafix - vocals"]
   },
 
   {
@@ -332,6 +460,26 @@ const releases = [
     platforms: ["sc"],
     rating: 1,
     credits: ["lynU - production, vocals"]
+  },
+
+  {
+    title: "if you know...",
+    cover: "https://i1.sndcdn.com/artworks-eNbPOgprv4VjillL-mHVCoA-t500x500.jpg",
+    date: "11/8/24",
+    type: "Collab",
+    runtime: "3:24",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: [
+      "afflicted",
+      "Alyx Trick - vocals, artwork",
+      "lynU - production, vocals",
+      "crusafix - vocals",
+      "deepinparis - vocals",
+      "isai - vocals",
+      "crusey - vocals",
+      "akkiro - vocals"
+    ]
   },
 
   {
@@ -414,13 +562,7 @@ const releases = [
     runtime: "2:12",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: [
-      "#3six0 - collective",
-      "lynU - production, vocals",
-      "Alyx Trick - vocals",
-      "crusafix - vocals",
-      "isai - production"
-    ]
+    credits: ["#3six0", "lynU - production, vocals", "Alyx Trick - vocals", "crusafix - vocals", "isai - production"]
   },
 
   {
@@ -453,7 +595,7 @@ const releases = [
     runtime: "2:03",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
-    credits: ["#3six0 - collective", "lynU - production, vocals", "isai - vocals"]
+    credits: ["#3six0", "lynU - production, vocals", "isai - vocals"]
   },
 
   {
@@ -525,6 +667,39 @@ const releases = [
   },
 
   {
+    title: "distract (feat. lynU)",
+    cover: "https://i1.sndcdn.com/artworks-YAVJ9egLz7kD2i9K-nom71Q-t500x500.jpg",
+    date: "12/29/23",
+    type: "Collab",
+    runtime: "3:49",
+    platforms: ["sc", "spt", "apl", "yt", "bc"],
+    rating: 3,
+    credits: ["Alyx Trick - production, vocals", "lynU - vocals"]
+  },
+
+  {
+    title: "#hitTheHay",
+    cover: "https://i1.sndcdn.com/artworks-x1VtJcQymF5luyVI-nWKCJw-t500x500.jpg",
+    date: "12/1/23",
+    type: "Single",
+    runtime: "2:04",
+    platforms: ["sc"],
+    rating: 1,
+    credits: ["c4pri - vocals", "erdo - production"]
+  },
+
+  {
+    title: "zombie",
+    cover: "https://i1.sndcdn.com/artworks-VJxLNEfRDCP0LuqL-urUcoA-t500x500.jpg",
+    date: "11/3/23",
+    type: "Single",
+    runtime: "2:17",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 0,
+    credits: ["c4pri - production, vocals", "isai - vocals"]
+  },
+
+  {
     title: "hurtz",
     cover: "https://i1.sndcdn.com/artworks-eR6szFTifKsumzk7-3NzmXQ-t500x500.jpg",
     date: "10/18/23",
@@ -544,5 +719,135 @@ const releases = [
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
     credits: ["lynU - production, vocals, visuals", "Alyx Trick - production, vocals", "isai - production"]
+  },
+
+  {
+    title: "mr. guap getter",
+    cover: "https://i1.sndcdn.com/artworks-FwCgxPzNqPE0zGUk-gO3VWw-t500x500.jpg",
+    date: "5/19/23",
+    type: "Single",
+    runtime: "1:49",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 2,
+    credits: ["c4pri - vocals", "erdo - production"]
+  },
+
+  {
+    title: "packedd",
+    cover: "https://i1.sndcdn.com/artworks-YKL5oIOKYn0nqhKh-hyLqaA-t500x500.jpg",
+    date: "5/9/23",
+    type: "Collab",
+    runtime: "2:11",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: [
+      "afflicted",
+      "Alyx Trick - vocals",
+      "lynU - vocals",
+      "crusafix - vocals",
+      "isai - vocals",
+      "erdo - production, artwork"
+    ]
+  },
+
+  {
+    title: "firstplace",
+    cover: "https://i1.sndcdn.com/artworks-PbzSjLrX7TS7mRFG-yJWNow-t500x500.jpg",
+    date: "4/5/23",
+    type: "Collab",
+    runtime: "2:18",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 0,
+    credits: ["afflicted", "lynU - vocals", "crusafix - vocals", "akkiro - vocals", "mycorpsebride - production"]
+  },
+
+  {
+    title: "lose it",
+    cover: "https://i1.sndcdn.com/artworks-KIH6eJ5IbK8sk24t-XdLMCw-t500x500.jpg",
+    date: "3/17/23",
+    type: "Single",
+    runtime: "2:35",
+    platforms: ["sc"],
+    rating: 0,
+    credits: ["c4pri - production, vocals", "imsg - vocals", "crusafix - vocals"]
+  },
+
+  {
+    title: "deadeye",
+    cover: "https://i1.sndcdn.com/artworks-KzEltOTbqkdWgVuE-ZooiGg-t500x500.jpg",
+    date: "2/22/23",
+    type: "Collab",
+    runtime: "2:00",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: ["afflicted", "crusafix - vocals", "lynU - vocals", "isai - vocals", "erdo - production"]
+  },
+
+  {
+    title: "omg",
+    cover: "https://i1.sndcdn.com/artworks-ZouTz6VcIT2WwzA2-jU0yMw-t500x500.jpg",
+    date: "12/31/22",
+    type: "Single",
+    runtime: "2:08",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 2,
+    credits: ["c4pri - vocals", "crusafix - vocals", "erdo - production", "cld - production"]
+  },
+
+  {
+    title: "computer",
+    cover: "https://i1.sndcdn.com/artworks-fqCpzskI3ZTITUHI-2iEiDA-t500x500.jpg",
+    date: "12/2/22",
+    type: "Single",
+    runtime: "2:22",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: ["c4pri - production, vocals", "mycorpsebride - vocals"]
+  },
+
+  {
+    title: "paramedics cypher",
+    cover: "https://i1.sndcdn.com/artworks-gdNSmuoaqtX6Yj0t-b33GZA-t500x500.jpg",
+    date: "11/19/22",
+    type: "Collab",
+    runtime: "4:53",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 0,
+    credits: [
+      "afflicted",
+      "crusafix - vocals",
+      "Alyx Trick - vocals",
+      "crusey - vocals",
+      "w!ldflwr - vocals",
+      "deepinparis - vocals",
+      "mycorpsebride - vocals",
+      "breakupbreakdown - vocals",
+      "akkiro - vocals",
+      "prkr blu - vocals",
+      "lynU - vocals",
+      "erdo - production, vocals, artwork"
+    ]
+  },
+
+  {
+    title: "it's all mine",
+    cover: "https://i1.sndcdn.com/artworks-DZjzHKWowye53IT0-X52vEw-t500x500.jpg",
+    date: "10/28/22",
+    type: "Single",
+    runtime: "2:22",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: ["c4pri - production, vocals"]
+  },
+
+  {
+    title: "it's all mine",
+    cover: "https://i1.sndcdn.com/artworks-PLaefRxturBojyjy-xJ6dKg-t500x500.jpg",
+    date: "9/28/22",
+    type: "Collab",
+    runtime: "2:20",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: ["osaka - production", "valetical - production"]
   }
 ];
