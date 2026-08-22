@@ -91,7 +91,7 @@ function loadTrack(track_index) {
 	// update details of the track
 	//track_name.textContent =
 	//	"Song " + (track_index + 1) + "/" + track_list.length + ": " + track_list[track_index].name;
-	track_name.textContent = "♪ " + track_list[track_index].name;
+	track_name.innerHTML = '<span class="music-note">♪</span> ' + track_list[track_index].name;
 	track_link.href = track_list[track_index].dl;
 
 	// set an interval of 1000 milliseconds for updating the seek slider

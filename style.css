@@ -1,13 +1,13 @@
 @font-face {
     font-family: "DTM Sans";
-    src: url("fonts/dtm-sans.ttf") format("truetype");
+    src: url("/fonts/dtm-sans.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Reddit Mono";
-    src: url("fonts/RedditMono-Regular.ttf") format("truetype");
+    src: url("/fonts/RedditMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -196,6 +196,10 @@ ul {
 }
 .controls td {
     padding: 8px 5px 5px;
+}
+
+.music-note {
+    font-family: "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
 
 /* padding around controls */
@@ -422,7 +426,7 @@ section:hover {
     max-width: calc(100vw - 30px);
     overflow-x: auto;
     overflow-y: hidden;
-    font-family: "Reddit Mono";
+    font-family: "Reddit Mono", monospace;
 }
 
 .music-table {
