@@ -17,7 +17,8 @@ const artistlinks = {
   yuzu: "https://soundcloud.com/yuzuberri",
   lynU: "https://soundcloud.com/lynyou",
   urchin_ltd: "https://x.com/urchin_ltd",
-  anothermedian: "https://soundcloud.com/anothermedian"
+  anothermedian: "https://soundcloud.com/anothermedian",
+  "Hatsune Miku": "https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01_us",
 };
 
 const releases = [
