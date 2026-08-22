@@ -846,7 +846,7 @@ const releases = [
     date: "9/28/22",
     type: "Collab",
     runtime: "2:20",
-    platforms: ["sc", "spt", "apl", "yt"],
+    platforms: ["sc"],
     rating: 3,
     credits: ["osaka - production", "valetical - production"]
   }
