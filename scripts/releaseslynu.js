@@ -171,7 +171,7 @@ const releases = [
     title: "Want You Gone [cover]",
     cover: "https://i1.sndcdn.com/artworks-GXrlUU4hJya9C9cq-0WGPPA-t500x500.jpg",
     date: "4/11/26",
-    type: "Cover",
+    type: "cover",
     runtime: "2:18",
     platforms: ["sc"],
     rating: 2,

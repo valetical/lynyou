@@ -116,7 +116,7 @@ const releases = [
     title: "Nintendo eShop: September 2015 (Cover)",
     cover: "https://i1.sndcdn.com/artworks-CgjvxoAfuVbXSF7y-AwAISA-t500x500.png",
     date: "3/3/26",
-    type: "Cover",
+    type: "cover",
     runtime: "1:46",
     platforms: ["sc", "yt"],
     rating: 1,
