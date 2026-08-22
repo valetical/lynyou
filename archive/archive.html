@@ -5,73 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lynU</title>
     <link rel="icon" type="image/png" href="../images/icon.png" />
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- Gtfo!!! -->
 
     <style>
 
-            @font-face {
-              font-family: "DTM Sans";
-              src: url("../fonts/dtm-sans.ttf") format("truetype");
-              font-weight: normal;
-              font-style: normal;
-            }
-
-            * {
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-            }
 
             body::before {
-              content: "";
-              position: fixed;
-              inset: 0;
-
               background: url("../images/vessel.gif");
               background-size: cover;
               background-repeat: no-repeat;
               background-position: center;
-
-              opacity: 0.5;
-              pointer-events: none;
-              z-index: -1;
+              opacity: 0.4;
             }
 
             body {
               background: radial-gradient(circle at top, #0a0a0a 0%, #000 60%);
-              color: #aaa;
-              font-family: 'DTM Sans', monospace;
-              font-size: 22px;
-              line-height: 1.3;
+              color: #a7a7a7;
               max-width: 1200px;
-              margin: 3rem auto 4rem auto;
-              cursor: url("../images/lyncursorarrow.png"), auto;
-            }
-
-            a {
-              color: #aaa;
-              text-decoration: none;
-              transition: 0.15s ease;
-            }
-
-            a:hover {
-              color: #fff;
-              text-shadow: 0 0 6px rgba(255,255,255,0.25);
-              filter: brightness(1.6);
-              text-decoration: underline;
-              cursor: url("../images/lyncursorlink.png"), auto;
             }
 
             section {
               margin-top: 1.5rem;
-            }
-
-            ul {
-              list-style: none;
-              display: flex;
-              flex-direction: column;
-              gap: 0.35rem;
             }
 
             .name {
@@ -81,14 +37,16 @@
 
             .soft {
               color: #777;
-              font-size: 20px;
+              font-size: 17px;
+              font-family: monospace;
             }
 
             .soft2 {
               color: #444;
               margin-top: 0.1rem;
               margin-bottom: 0.1rem;
-              font-size: 20px;
+              font-size: 18px;
+              font-family: monospace;
             }
 
             .names {
@@ -97,6 +55,7 @@
               margin-bottom: 0.1rem;
               margin-left: 5
               font-size: 20px;
+              font-family: monospace;
             }
 
             .label {
@@ -153,27 +112,13 @@
               display: inline-block;
             }
 
-            .yt { color: #ff0033; }
-            .sc { color: #ff740b; }
-            .twt { color: #00a1ff; }
-            .spt { color: #1ed760; }
-            .apl { color: #ff4e6b; }
-            .ig { color: #e1306c; }
-            .bc { color: #61929c; }
-            .ph { color: #72a9e0; }
-            .tik { color: #ff0050; }
-            .tok { color: #00f2ea; }
-            .sc, .yt, .twt, .spt, .apl, .ig, .bc, .ph, .tik, .tok {
-              text-decoration-skip-ink: auto;
-            }
-
             .divider { border: none; border-top: 1px solid #1e1c1b; margin: 1.3rem 0; }
 
 
       .box {
         position: relative;
-        padding: 5px;
-        margin-top: 20px;
+        padding: 2px;
+        margin-top: 10px;
         background: rgba(0, 0, 0, 1);
         background-clip: padding-box;
         border: 25px solid transparent;
@@ -184,17 +129,6 @@
         color: white;
         height: fit-content;
       }
-
-                  .back {
-        color: #8a8a8a;
-        font-style: italic;
-      }
-
-            .meta {
-              margin-top: 0.2rem;
-              color: #333;
-              font-size: 16px;
-            }
     </style>
   </head>
 
@@ -205,26 +139,68 @@
       <span class="name">other projects / archive</span>
 
       <ul class="soft2">
-        <li>this page is for other side projects / aliases i've went by throughout the years</li>
+        <li>this page is to help explain my aliases and projects, including which ones are currently inactive</li>
       </ul>
     </div>
 
     <hr class="divider" style="margin-top: 0.5rem" />
 
     <div class="projects">
-      <div class="section-title" id="side-projects">side projects</div>
+      <div class="section-title" id="side-projects">current projects</div>
 
       <section class="project box">
-        <div class="label">14106lyn</div>
-        <div class="names">aka lynU+</div>
-        <div class="soft2" style="margin-bottom: 0.8rem">active Feb 2024 – now</div>
+        <div class="label">lynU</div>
+        <div class="names">aka lynion</div>
+        <div class="soft2" style="margin-bottom: 0.8rem">active Jul 2024 – now</div>
         <ul>
           <li>
-            <a href="https://soundcloud.com/14106lyn"><span class="sc">SoundCloud</span></a>
+            <a href="https://soundcloud.com/lynyou"><span class="sc">SoundCloud</span></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/lynyouu"><span class="ig">Instagram</span></a>
+          </li>
+          <li>
+            <a href="https://music.apple.com/us/artist/lynu/1810236747"><span class="apl">Apple Music</span></a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/artist/2STKH6v7x4yEzQqToCsapM"><span class="spt">Spotify</span></a>
+          </li>
+          <li>
+            <a href="https://youtube.com/@lynyouu"><span class="yt">YouTube</span></a>
+          </li>
+          <li>
+            <a href="https://tiktok.com/@lynyouu1"> <span class="tik">Tik</span><span class="tok">Tok</span> </a>
           </li>
           <li class="soft" style="margin-top: 0.3rem">
-            originally the name of my main project, later changed to avoid confusion with the numbers. this account is
-            now used to post unfinished ideas, remixes, etc.
+            what i would consider my main project. originally started as an alt account to release digicore / trap music
+            but later evolved into its own thing and became my primary artist identity
+          </li>
+        </ul>
+      </section>
+
+      <section class="project box">
+        <a href="https://lynyou.com/redletterdiary">
+          <div class="label">red letter diary</div>
+        </a>
+        <div class="names">aka katie kross, Lyn Rivers, a red letter day</div>
+        <div class="soft2" style="margin-bottom: 0.8rem">active Sep 2024 – now</div>
+        <ul>
+          <li>
+            <a href="https://soundcloud.com/redletterdiary"><span class="sc">SoundCloud</span></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/redletterdiary"><span class="ig">Instagram</span></a>
+          </li>
+          <li>
+            <a href="https://music.apple.com/us/artist/red-letter-diary/1811783669"
+              ><span class="apl">Apple Music</span></a
+            >
+          </li>
+          <li>
+            <a href="https://open.spotify.com/artist/2YWYSbsOOwBcDgwVK1DDI0"><span class="spt">Spotify</span></a>
+          </li>
+          <li class="soft" style="margin-top: 0.3rem">
+            indie rock project focused on more personal and guitar-centric music
           </li>
         </ul>
       </section>
@@ -245,9 +221,8 @@
           </li>
           <li class="soft" style="margin-top: 0.3rem">
             duo dariacore / hyperflip / EDM project by <a href="https://lynyou.com">lynU</a> and
-            <a href="https://alyxtrick.com">Alyx Trick</a>. the project is themed around audio + visual illusions like
-            laurel/yanny, the dress (gold/white or blue/black), “guy swinging toward the camera” illusion, and the
-            spinning dancer silhouette illusion
+            <a href="https://alyxtrick.com">Alyx Trick</a>. the project is themed around popular audio & visual
+            illusions
           </li>
         </ul>
       </section>
@@ -273,7 +248,7 @@
         </ul>
       </section>
 
-      <div class="section-title" id="inactive">inactive</div>
+      <div class="section-title" id="formermain">former main aliases</div>
 
       <section class="project box">
         <div class="label">c4pri</div>
@@ -284,7 +259,8 @@
             <a href="https://soundcloud.com/c4v"><span class="sc">SoundCloud</span></a>
           </li>
           <li>
-            <a href="https://soundcloud.com/c4pri"><span class="sc">SoundCloud (2020)</span></a>
+            <a href="https://soundcloud.com/c4pri"><span class="sc">SoundCloud</span></a>
+            <span class="smallthing" style="color: #e48016"> - 2020 music only</span>
           </li>
           <li>
             <a href="https://open.spotify.com/artist/6f7VLFpIztoAMNJ8UzX6Yr"><span class="spt">Spotify</span></a>
@@ -293,10 +269,10 @@
             <a href="https://www.youtube.com/@c4pri"><span class="yt">YouTube</span></a>
           </li>
           <li class="soft" style="margin-top: 0.3rem">
-            c4pri was the alias i started releasing "serious" music under at 11 years old. over time i became detached
-            from the name due to personal context around it and feeling like the music no longer represented me. some
-            c4pri releases were later rebranded under lynU to get rid of confusion since it’s all the same artist and
-            all in a similar style
+            the alias i started releasing "serious" music under at 11 years old. as time passed, i became detached from
+            the name due to personal context around it and feeling like the music no longer represented me. some c4pri
+            releases were later rebranded under lynU to get rid of confusion since it’s all the same person and all in a
+            similar style
           </li>
         </ul>
       </section>
@@ -317,11 +293,20 @@
           </li>
           <li class="soft" style="margin-top: 0.3rem">
             a more "experimental" outlet for me created as a break from the c4pri alias. i focused more on styles &
-            genres that i had never tried / released before. the name stems from an old online username i went by since
+            genres that i had never tried or released before. the name stems from an old online username i went by since
             late 2018. the project is inactive and all of the releases are now under lynU
           </li>
         </ul>
       </section>
+
+      <!-- <section class="project box">
+  <div class="label">chlorine99</div>
+  <div class="soft2" style="margin-bottom: .8rem;">active Apr 2021 - Jun 2021</div>
+  <ul>
+    <li class="soft" style="margin-top:0.3rem">you not hearing nothing about this one 🤣🤣🤣</li></ul>
+</section> -->
+
+      <div class="section-title" id="formerprojects">former projects</div>
 
       <section class="project box">
         <div class="label">katie kross</div>
@@ -334,26 +319,9 @@
             <a href="https://open.spotify.com/artist/2YWYSbsOOwBcDgwVK1DDI0"><span class="spt">Spotify</span></a>
           </li>
           <li class="soft" style="margin-top: 0.3rem">
-            began as a side project while working on my album 'reverie,' originally used to post heavily edited or
-            alternate versions of some of my songs that were meant for 'reverie' along with some other indie rock songs.
-            it eventually evolved into its own thing before being retired in 2025 with the releases merging with red
-            letter diary
-          </li>
-        </ul>
-      </section>
-
-      <section class="project box">
-        <div class="label">r4ichu</div>
-        <div class="soft2" style="margin-bottom: 0.8rem">active Sep 2023 – Oct 2024</div>
-        <ul>
-          <li>
-            <a href="https://soundcloud.com/1r4ichu"><span class="sc">SoundCloud</span></a>
-          </li>
-          <li class="soft" style="margin-top: 0.3rem">
-            short-lived SoundCloud account created in September 2023 to make fun of how formulaic the "digicore" sound
-            became. i tried to prove that it was easy to get attention making the style if you exaggerate it enough. the
-            lyrics are ridiculous for that reason. the songs were recorded by me with an AI voice filter so that my
-            voice wasn't recognizable
+            began as a side project while making my album 'reverie'. used to post heavily edited or alternate versions
+            of some of my songs that were meant for 'reverie' along with some other indie rock songs. it eventually
+            evolved into its own thing before being retired in 2025 with the releases merging with red letter diary
           </li>
         </ul>
       </section>
@@ -366,9 +334,24 @@
             <a href="https://soundcloud.com/bleedingcanvas"><span class="sc">SoundCloud</span></a>
           </li>
           <li class="soft" style="margin-top: 0.3rem">
-            began in May 2023 as a throwaway SoundCloud account when i was unhappy with my main projects' output. i
-            later attached it to my main account and turned it into a spam upload dump for whatever i made, but few
-            tracks remain public
+            a throwaway page i made when i was unhappy with my main projects' output. i later attached it to my main
+            account and turned it into a spam upload dump for random things i made, but few tracks remain public
+          </li>
+        </ul>
+      </section>
+
+      <section class="project box">
+        <div class="label">r4ichu</div>
+        <div class="soft2" style="margin-bottom: 0.8rem">active Sep 2023 – Oct 2024</div>
+        <ul>
+          <li>
+            <a href="https://soundcloud.com/1r4ichu"><span class="sc">SoundCloud</span></a>
+          </li>
+          <li class="soft" style="margin-top: 0.3rem">
+            short-lived account created in September 2023 to make fun of how formulaic the "digicore" sound became. i
+            tried to prove that it was easy to get attention making that style of music if you exaggerate it enough. the
+            lyrics are ridiculous for that reason. the songs were recorded by me with an AI voice filter so that my
+            voice wasn't recognizable
           </li>
         </ul>
       </section>
@@ -382,9 +365,9 @@
             <a href="https://soundcloud.com/siennacell"><span class="sc">SoundCloud</span></a>
           </li>
           <li class="soft" style="margin-top: 0.3rem">
-            SoundCloud alt for posting flips and tracks initially inspired by the style of ambient trap beats i was into
-            when i first started making music. over time, i drifted away from that idea and posted some different tracks
-            too.
+            made for posting flips and tracks initially inspired by the style of ambient trap beats i was into when i
+            first started making music. over time, i drifted away from that idea and posted some different styles of
+            music aswell
           </li>
         </ul>
       </section>
@@ -400,6 +383,8 @@
         </ul>
       </section>
 
+      <div class="section-title" id="spam">spam / dumps</div>
+
       <section class="project box">
         <div class="label">c4lol</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Jul 2021 – Jan 2023</div>
@@ -407,7 +392,7 @@
           <li>
             <a href="https://soundcloud.com/c4lol"><span class="sc">SoundCloud</span></a>
           </li>
-          <li class="soft" style="margin-top: 0.3rem">spam / dump. not much to say about it</li>
+          <li class="soft" style="margin-top: 0.3rem"></li>
         </ul>
       </section>
 
@@ -420,8 +405,8 @@
             <a href="https://soundcloud.com/c4prix"><span class="sc">SoundCloud</span></a>
           </li>
           <li class="soft" style="margin-top: 0.3rem">
-            spam / dump, originally used when i was scared of posting "experimental" music to my main page and needed a
-            place to release other kinds of music
+            created when i was scared of posting "experimental" music to my main page and needed a place to release
+            other kinds of music
           </li>
         </ul>
       </section>
@@ -435,19 +420,26 @@
             <a href="https://soundcloud.com/tresstop"><span class="sc">SoundCloud</span></a>
           </li>
           <li class="soft" style="margin-top: 0.3rem">
-            originally created in 2020 during a "bitcrush" trend on SoundCloud. i also used it as an alias for posting
-            beats on YouTube at the time. the original SoundCloud account has since been deleted and the URL now belongs
-            to an archive of tracks tied to gremlife aswell as c4pri
+            created in 2020 during a certain "bitcrushed vocals" trend on SoundCloud. i also used it as an alias for
+            posting beats on YouTube at the time. the original SoundCloud account has since been deleted and the URL now
+            belongs to an archive of tracks tied to gremlife aswell as c4pri
           </li>
         </ul>
       </section>
 
-      <!-- <section class="project box">
-  <div class="label">chlorine99</div>
-  <div class="soft2" style="margin-bottom: .8rem;">active Apr 2021 - Jun 2021</div>
-  <ul>
-    <li class="soft" style="margin-top:0.3rem">you not hearing nothing about this one 🤣🤣🤣</li></ul>
-</section> -->
+      <section class="project box">
+        <div class="label">14106lyn</div>
+        <div class="names">aka lynU+</div>
+        <div class="soft2" style="margin-bottom: 0.8rem">active Feb 2024 – now</div>
+        <ul>
+          <li>
+            <a href="https://soundcloud.com/14106lyn"><span class="sc">SoundCloud</span></a>
+          </li>
+          <li class="soft" style="margin-top: 0.3rem">
+            my current spam account, used to post extra songs, unfinished songs, remixes, etc.
+          </li>
+        </ul>
+      </section>
 
       <div class="section-title" id="collectives">collectives</div>
 
@@ -492,7 +484,7 @@
       </section>
     </div>
 
-    <div class="meta">
+    <div class="year">
       <span>© <span id="year"></span> lynU</span>
     </div>
 
