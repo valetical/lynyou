@@ -38,12 +38,13 @@ const artistlinks = {
   cld: "https://www.cldxp.net",
   imsg: "https://soundcloud.com/imsg",
   "Sira Yan": "https://soundcloud.com/sirayan",
-
   elwood: "https://soundcloud.com/elw00d",
   sega73: "https://soundcloud.com/sega73",
   reallerr: "https://soundcloud.com/reallerr",
   homecollection49: "https://soundcloud.com/homecollection49",
-  reali: "https://soundcloud.com/rreali"
+  reali: "https://soundcloud.com/rreali",
+  h3artch3rades: "https://soundcloud.com/h3artch3rades",
+  awe: "https://whyawe.carrd.co/"
 };
 
 const releases = [
