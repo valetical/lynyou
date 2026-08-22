@@ -297,7 +297,7 @@ input[type="range"]::-moz-range-thumb {
     color: #ea4087;
 }
 .bc {
-    color: #61929c;
+    color: #629aa9;
 }
 .ph {
     color: #72a9e0;
@@ -307,6 +307,9 @@ input[type="range"]::-moz-range-thumb {
 }
 .tok {
     color: #00f2ea;
+}
+.osu {
+    color: #ff7cbb;
 }
 .sc,
 .yt,
