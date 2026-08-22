@@ -34,12 +34,12 @@ let track_list = [
 		dl: "https://soundcloud.com/yuzuberri/aisle"
 	},
 	{
-		name: "Untitled 1/15/24 7:09PM",
+		name: "UNTITLED 1/15/24 7:09PM",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/Pattern%201_192%20-%20Loop_3.mp3",
 		dl: "https://file.garden/ad5_FaJMmVnp7v37/Pattern%201_192%20-%20Loop_3.mp3"
 	},
 	{
-		name: "yuzu - Until Next Time [Arrangement]",
+		name: "yuzu - Until Next Time (Battle 3) [Arrangement]",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/untilnexttime_128kbps_edit.mp3",
 		dl: "https://file.garden/ad5_FaJMmVnp7v37/untilnexttime_128kbps_edit.mp3"
 	},
@@ -54,24 +54,29 @@ let track_list = [
 		dl: "https://soundcloud.com/siennacell/ordinary"
 	},
 	{
-		name: "sienna - lizard food ┌(＾＾)┘",
+		name: "sienna - lizard food",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/lizardfood_128kbps_edit.mp3",
 		dl: "https://soundcloud.com/siennacell/lizard-food"
 	},
 	{
-		name: "Untitled 2/16/25 3:24AM",
+		name: "UNTITLED 2/16/25 3:24AM",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/rldafraid_128kbps_edit.mp3",
 		dl: "https://file.garden/ad5_FaJMmVnp7v37/rldafraid_128kbps_edit.mp3"
 	},
 	{
-		name: "Untitled 12/23/22 9:50PM",
+		name: "UNTITLED 12/23/22 9:50PM",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/harbor_128kbps_edit.mp3",
 		dl: "https://file.garden/ad5_FaJMmVnp7v37/harbor_128kbps_edit.mp3"
 	},
 	{
-		name: "Untitled 12/25/22 4:56AM",
+		name: "UNTITLED 12/25/22 4:56AM",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/fade2gray_128kbps_edit.mp3",
 		dl: "https://soundcloud.com/c4lol/fade-to-gray"
+	},
+	{
+		name: "UNTITLED 10/28/25 4:02PM",
+		path: "https://file.garden/ad5_FaJMmVnp7v37/ahyeah_128kbps_edit.mp3",
+		dl: "https://file.garden/ad5_FaJMmVnp7v37/ahyeah_128kbps_edit.mp3"
 	}
 ];
 
@@ -86,7 +91,7 @@ function loadTrack(track_index) {
 	// update details of the track
 	//track_name.textContent =
 	//	"Song " + (track_index + 1) + "/" + track_list.length + ": " + track_list[track_index].name;
-	track_name.textContent = track_list[track_index].name;
+	track_name.textContent = "♪ " + track_list[track_index].name;
 	track_link.href = track_list[track_index].dl;
 
 	// set an interval of 1000 milliseconds for updating the seek slider
