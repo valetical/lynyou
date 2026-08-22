@@ -16,7 +16,8 @@ const artistlinks = {
   "° .✝︎˚∘[• ᴍɪᴋᴇ'ꜱ ʜᴜꜱʙᴀɴᴅ •]° .✝︎˚∘": "https://soundcloud.com/o-o-729209251",
   yuzu: "https://soundcloud.com/yuzuberri",
   lynU: "https://soundcloud.com/lynyou",
-  urchin_ltd: "https://x.com/urchin_ltd"
+  urchin_ltd: "https://x.com/urchin_ltd",
+  anothermedian: "https://soundcloud.com/anothermedian"
 };
 
 const releases = [
@@ -202,6 +203,17 @@ const releases = [
     platforms: ["sc", "yt"],
     rating: 1,
     credits: ["Lunaxis - composer", "yuzu - arranger"]
+  },
+  
+    {
+    title: "ALL TOMORROWS",
+    cover: "https://i1.sndcdn.com/artworks-84WVH5huvKE4IpUa-S84A9Q-t500x500.png",
+    date: "12/19/25",
+    type: "Remix",
+    runtime: "3:14",
+    platforms: ["sc"],
+    rating: 1,
+    credits: ["anothermedian - composer", "shayz - arranger", "yuzu - drums"]
   },
 
   {
