@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>red letter diary</title>
+        <link rel="icon" type="image/png" href="../images/cropp.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+
+        <style>
+            body::before {
+                background-image: none;
+                background-color: black;
+            }
+
+            body {
+                font-family: monospace;
+                max-width: 1000px;
+            }
+
+            .name {
+                margin-top: 20px;
+                margin-bottom: 10px;
+                font-size: 32px;
+                text-align: center;
+            }
+
+            .content {
+                margin-left: 50px;
+                margin-bottom: 20px;
+                width: fit-content;
+            }
+
+            .links {
+                align-content: center;
+            }
+
+            .links ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                list-style: none;
+            }
+
+            .links li {
+                margin-bottom: 20px;
+            }
+
+            .navigate {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .back2 {
+                color: #ffffff;
+                font-style: italic;
+                opacity: 0.3;
+            }
+
+            .releasebox {
+                border: 0px solid #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navigate">
+            <a href="https://lynyou.com" class="back">← home</a>
+            <a href="https://lynyou.com/archive" class="back2">other projects / archive →</a>
+        </div>
+
+        <div class="name">
+            <span>red letter diary</span>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="https://soundcloud.com/redletterdiary"><span class="sc">soundcloud</span></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/redletterdiary"><span class="ig">instagram</span></a>
+                </li>
+                <li>
+                    <a href="https://music.apple.com/us/artist/red-letter-diary/1811783669"
+                        ><span class="apl">apple music</span></a
+                    >
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/2YWYSbsOOwBcDgwVK1DDI0"
+                        ><span class="spt">spotify</span></a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <div class="releasebox">
+            <table class="music-table">
+                <thead>
+                    <tr>
+                        <th>cover</th>
+                        <th>release</th>
+                        <th>release date</th>
+                        <th>type</th>
+                        <th>runtime</th>
+                        <th>platforms</th>
+                        <th>rating</th>
+                    </tr>
+                </thead>
+                <tbody id="release-list"></tbody>
+            </table>
+        </div>
+
+        <script src="../scripts/releasesrld.js"></script>
+        <script src="../scripts/releaserender.js"></script>
+
+        <div class="year">
+            <span>© <span id="year"></span> lynU</span>
+        </div>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+
+            document.querySelectorAll(".rating").forEach(function (element) {
+                const rating = Number(element.dataset.rating);
+                if (rating === 0) {
+                    element.textContent = "☆☆☆";
+                } else {
+                    element.textContent = "★".repeat(rating) + "☆".repeat(3 - rating);
+                }
+            });
+        </script>
+    </body>
+</html>
