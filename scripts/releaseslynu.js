@@ -49,6 +49,7 @@ const artistlinks = {
   "Sira Yan": "https://soundcloud.com/sirayan",
   sadboyshaq: "https://soundcloud.com/sadboyshaq",
   kurtains: "https://soundcloud.com/kurtains",
+  cheeto: "https://soundcloud.com/ewcheeto",
 
   afflicted: "https://soundcloud.com/1afflicted",
   "#3six0": "https://soundcloud.com/3six03six03six0",
@@ -77,6 +78,18 @@ const releases = [
     credits: ["lynU - production"]
   },
   */
+  /*
+      {
+    title: "finalStrike",
+    cover: "?",
+    date: "12/31/26",
+    type: "single",
+    runtime: "2:50",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: ["lynU - production","cheeto - artwork"]
+  },
+*/
   {
     title: "Flower Man",
     cover: "https://i1.sndcdn.com/artworks-NhvdM6zjJRazQkbm-Pht19w-t500x500.jpg",
@@ -1037,7 +1050,7 @@ const releases = [
       "cewer - vocals",
       "1icy - vocals",
       "*67 - vocals",
-      "lethal- vocals",
+      "lethal - vocals",
       "shyburial - production"
     ]
   },
