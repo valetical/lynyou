@@ -71,7 +71,7 @@ releases.forEach(function (release) {
           return `
           <div>
             <a href="${info.url}" target="_blank">
-              <span class="${info.class || ""}">${info.name}</span>
+              <span class="releaseplatform ${info.class || ""}">${info.name}</span>
             </a>
           </div>
         `;
@@ -79,7 +79,7 @@ releases.forEach(function (release) {
 
         return `
         <div>
-          <span class="${info.class}">${info.name}</span>
+          <span class="releaseplatform ${info.class || ""}">${info.name}</span>
         </div>
       `;
       })
@@ -117,16 +117,25 @@ releases.forEach(function (release) {
     })
     .join("");
 
+  // flp payhip link
+  if (release.flp) {
+    platformhtml += `
+    <div>
+      <a href="${release.flp}" target="_blank" rel="noopener">
+        <span class="releaseplatform flp">FLP purchase</span>
+      </a>
+    </div>
+  `;
+  }
+
   row.innerHTML = `
     <td>
       <img src="${release.cover}" class="cover" />
     </td>
-
     <td>
       ${releaseInfo}
       ${credits}
     </td>
-
     <td class="date">${formatDate(release.date)}</td>
     <td class="type">${release.type}</td>
     <td class="runtime">${release.runtime}</td>

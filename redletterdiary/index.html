@@ -10,20 +10,31 @@
 
         <style>
             body::before {
-                background-image: none;
-                background-color: black;
+                content: "";
+                position: fixed;
+                inset: 0;
+
+                background: url("../images/13.gif");
+                background-repeat: repeat;
+
+                opacity: 0.1;
+                pointer-events: none;
+                z-index: -1;
             }
 
             body {
+                background: #000;
+                color: #fff;
                 font-family: monospace;
-                max-width: 1000px;
+                max-width: 800px;
             }
 
             .name {
                 margin-top: 20px;
                 margin-bottom: 10px;
-                font-size: 32px;
+                font-size: 36px;
                 text-align: center;
+                font-family: ralsei;
             }
 
             .content {
@@ -62,16 +73,38 @@
             }
 
             .releasebox {
-                border: 0px solid #fff;
+                border: 3px solid #4c4c4c;
+                background-color: rgb(0, 0, 0, 0.8);
+            }
+
+            .sitemenu {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin: 0 0 30px;
+                padding: 5px 20px;
+                background: transparent;
+                border: none;
+                font-size: 20px;
+                border-bottom: dashed;
+                border-bottom-color: #1f1f1f;
+            }
+
+            .sitemenu a {
+                font-family: monospace;
             }
         </style>
     </head>
 
     <body>
+        <!--
         <div class="navigate">
             <a href="https://lynyou.com" class="back">← home</a>
             <a href="https://lynyou.com/archive" class="back2">other projects / archive →</a>
         </div>
+-->
 
         <div class="name">
             <span>red letter diary</span>
@@ -133,5 +166,6 @@
                 }
             });
         </script>
+        <script src="../scripts/menu.js"></script>
     </body>
 </html>

@@ -1,10 +1,72 @@
 const artistlinks = {
   lynU: "https://soundcloud.com/lynyou",
-  "ellie mills": "https://soundcloud.com/elliemillss"
+  valetical: "https://soundcloud.com/v_letical",
+  yuzu: "https://soundcloud.com/yuzuberri",
+  c4pri: "https://soundcloud.com/c4v",
+
+  rel: "https://soundcloud.com/2rel",
+  crusafix: "https://soundcloud.com/1crusafix",
+  akkiro: "https://soundcloud.com/7akkiro",
+  isai: "https://soundcloud.com/omgisai",
+  deepinparis: "https://soundcloud.com/deepinparis",
+  girlsynth: "https://soundcloud.com/fruityeq",
+  rhekdens: "https://soundcloud.com/rhekdens",
+  yarn: "https://soundcloud.com/yarnn",
+  snoa: "https://soundcloud.com/snoa247",
+  sai: "https://soundcloud.com/saiwai",
+  "Alyx Trick": "https://alyxtrick.com",
+  "ellie mills": "https://soundcloud.com/elliemillss",
+  xaev: "https://unironical.ly",
+  "DECO*27": "https://www.youtube.com/channel/UCGmO0S4S-AunjRdmxA6TQYg",
+  "Toby Fox": "https://x.com/tobyfox",
+  Camellia: "https://cametek.jp",
+  urchin_ltd: "https://x.com/urchin_ltd",
+  inci0: "https://hachinemu.com",
+  "Jonathan Coulton": "https://www.jonathancoulton.com",
+  Mameyudoufu: "https://x.com/mameyudoufu",
+  vylus: "https://soundcloud.com/vylus",
+  slyde: "https://soundcloud.com/slydeways",
+  mycorpsebride: "https://soundcloud.com/orochimara",
+  crusey: "https://soundcloud.com/cruseyyyy",
+  "w!ldflwr": "https://soundcloud.com/ilovewldflwr",
+  "prkr blu": "https://soundcloud.com/prkrblu",
+  erdo: "https://soundcloud.com/erdo",
+  breakupbreakdown: "https://soundcloud.com/breakupbreakdown",
+  kay: "https://soundcloud.com/3eight9",
+  yinon: "https://soundcloud.com/yinons",
+  d0llywood1: "https://soundcloud.com/d0llywood1",
+  dime: "https://soundcloud.com/proddime",
+  osaka: "https://soundcloud.com/forhampy",
+  scruff: "https://soundcloud.com/scrufff",
+  cewer: "https://soundcloud.com/cewer",
+  "*67": "https://soundcloud.com/o67o",
+  shyburial: "https://soundcloud.com/yuki-pons",
+  heroinsick: "https://soundcloud.com/heroinsick",
+  nejdos: "https://www.youtube.com/channel/UCD05UM9ao2K6-EyZVzxDwrQ",
+  cld: "https://www.cldxp.net",
+  elxnce: "https://soundcloud.com/elxnce",
+  imsg: "https://soundcloud.com/imsg",
+  "Sira Yan": "https://soundcloud.com/sirayan",
+  sadboyshaq: "https://soundcloud.com/sadboyshaq",
+  kurtains: "https://soundcloud.com/kurtains",
+  cheeto: "https://soundcloud.com/ewcheeto",
+
+  afflicted: "https://soundcloud.com/1afflicted",
+  "#3six0": "https://soundcloud.com/3six03six03six0",
+  MEGAREX: "https://megarex.jp",
+
+  elwood: "https://soundcloud.com/elw00d",
+  sega73: "https://soundcloud.com/sega73",
+  reallerr: "https://soundcloud.com/reallerr",
+  homecollection49: "https://soundcloud.com/homecollection49",
+  reali: "https://soundcloud.com/rreali",
+
+  h3artch3rades: "https://soundcloud.com/h3artch3rades",
+  awe: "https://whyawe.carrd.co/"
 };
 
 const releases = [
-/*
+  /*
   {
     title: "215",
     cover: "https://i1.sndcdn.com/artworks-FNnCVzWzS7JgxrAe-uUQzSg-t500x500.jpg",
@@ -59,8 +121,8 @@ const releases = [
     rating: 3,
     credits: ["lynU - production, vocals"]
   },
-  
-                {
+
+  {
     title: "even if it kills me",
     cover: "https://i1.sndcdn.com/artworks-9Hc7S5xJDo4yOLNy-MapNxQ-t500x500.jpg",
     date: "10/21/25",
@@ -68,7 +130,7 @@ const releases = [
     runtime: "2:06",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"],
+    credits: ["lynU - production, vocals"]
   },
 
   {
@@ -112,7 +174,7 @@ const releases = [
     runtime: "14:46",
     platforms: ["sc", "spt", "apl", "yt", "bc"],
     rating: 3,
-    credits: ["lynU - production, vocals", "ellie mills - additional vocals (track 2)"],
+    credits: ["lynU - production, vocals", "ellie mills - vocals (track 2)"],
     tracks: [
       ["How to die standing still", "3:20"],
       ["Broke my promise", "2:19"],
@@ -139,8 +201,8 @@ const releases = [
       ["Arise", "1:41"]
     ]
   },
-  
-              {
+
+  {
     title: "as far as i know",
     cover: "https://i1.sndcdn.com/artworks-URQu0ZnF4ezVUkke-wUEl5w-t500x500.jpg",
     date: "9/14/24",
@@ -148,10 +210,10 @@ const releases = [
     runtime: "1:32",
     platforms: ["sc"],
     rating: 0,
-    credits: ["lynU - production, vocals"],
+    credits: ["lynU - production, vocals"]
   },
-  
-            {
+
+  {
     title: "bittersweet",
     cover: "https://i1.sndcdn.com/artworks-1LCOoPzGYQApJ01x-znX87Q-t500x500.jpg",
     date: "8/6/24",
@@ -159,10 +221,10 @@ const releases = [
     runtime: "1:19",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
-    credits: ["lynU - production, vocals"],
+    credits: ["lynU - production, vocals"]
   },
-  
-          {
+
+  {
     title: "crown lake",
     cover: "https://i1.sndcdn.com/artworks-gybUTzU4gyoaJ0gE-9k6yAw-t500x500.jpg",
     date: "5/18/24",
@@ -170,10 +232,10 @@ const releases = [
     runtime: "2:02",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"],
+    credits: ["lynU - production, vocals"]
   },
-  
-        {
+
+  {
     title: "deep cuts",
     cover: "https://i1.sndcdn.com/artworks-W3OF2QnE82kVuaGY-t9mzpw-t500x500.jpg",
     date: "5/1/24",
@@ -181,10 +243,10 @@ const releases = [
     runtime: "1:57",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"],
+    credits: ["lynU - production, vocals"]
   },
-  
-      {
+
+  {
     title: "where did u go",
     cover: "https://i1.sndcdn.com/artworks-FUvuifC53KyhxJ49-iktb4w-t500x500.jpg",
     date: "4/17/24",
@@ -192,10 +254,10 @@ const releases = [
     runtime: "1:53",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"],
+    credits: ["lynU - production, vocals"]
   },
-  
-    {
+
+  {
     title: "watering dead plants",
     cover: "https://i1.sndcdn.com/artworks-gZjGHzzvmpJhBggD-K5dnqw-t500x500.jpg",
     date: "3/15/24",
@@ -208,11 +270,11 @@ const releases = [
       ["parking lot", "1:27"],
       ["midden", "1:31"],
       ["love liar", "2:02"],
-      ["drive into a corner", "1:27"],
+      ["drive into a corner", "1:27"]
     ]
   },
-  
-        {
+
+  {
     title: "my favorite lie",
     cover: "https://i1.sndcdn.com/artworks-jw3uyYGzK5POVd8N-RlPRyQ-t500x500.jpg",
     date: "2/6/24",
@@ -220,7 +282,6 @@ const releases = [
     runtime: "1:13",
     platforms: ["sc"],
     rating: 0,
-    credits: ["lynU - production, vocals"],
-  },
-  
+    credits: ["lynU - production, vocals"]
+  }
 ];

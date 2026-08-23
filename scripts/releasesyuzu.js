@@ -18,7 +18,7 @@ const artistlinks = {
   lynU: "https://soundcloud.com/lynyou",
   urchin_ltd: "https://x.com/urchin_ltd",
   anothermedian: "https://soundcloud.com/anothermedian",
-  "Hatsune Miku": "https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01_us",
+  "Hatsune Miku": "https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01_us"
 };
 
 const releases = [
@@ -47,6 +47,7 @@ const releases = [
     type: "remix",
     runtime: "3:21",
     platforms: ["sc", "spt", "apl", "yt"],
+    flp: "https://store.lynyou.com/b/7vqlz",
     rating: 3,
     credits: [
       "Toby Fox - composer",

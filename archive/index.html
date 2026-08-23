@@ -33,12 +33,13 @@
             .name {
               color: #fff;
               font-size: 32px;
+              font-family: Ralsei
             }
 
             .soft {
               color: #777;
               font-size: 17px;
-              font-family: monospace;
+              font-family: "Reddit Mono";
             }
 
             .soft2 {
@@ -46,7 +47,7 @@
               margin-top: 0.1rem;
               margin-bottom: 0.1rem;
               font-size: 18px;
-              font-family: monospace;
+              font-family: DTM Sans;
             }
 
             .names {
@@ -55,14 +56,15 @@
               margin-bottom: 0.1rem;
               margin-left: 5
               font-size: 20px;
-              font-family: monospace;
+              font-family: ralsei;
             }
 
             .label {
               color: #fff;
               margin-bottom: 0.1rem;
               font-weight: 300;
-              font-size: 32px;
+              font-size: 24px;
+              font-family: "8BitOperator faithful"
             }
 
             .archive-link {
@@ -77,6 +79,42 @@
             .archive-link:hover {
               color: #fff;
             }
+
+      .afflicted {
+        color: #ffcb00;
+      }
+
+      .capri {
+        color: #54ab1c;
+      }
+
+      .val {
+        color: #8297bf
+      }
+
+      .katie {
+        color: #a06487
+      }
+
+      .rld {
+        color: #c24343
+      }
+
+      .lynu {
+        color: #bea2e6
+      }
+
+            .laurel {
+        color: #c0b264
+      }
+
+      .sienna {
+        color: #db6363ff
+      }
+
+      .yuzu {
+        color: #6070b0
+      }
 
             .projects {
               display: grid;
@@ -133,7 +171,7 @@
   </head>
 
   <body>
-    <a href="https://lynyou.com" class="back">← back</a>
+    <!--<a href="https://lynyou.com" class="back">← back</a>-->
 
     <div style="margin-top: 1.8rem">
       <span class="name">other projects / archive</span>
@@ -143,6 +181,48 @@
       </ul>
     </div>
 
+    <!--Music player-->
+    <div id="musicplayer">
+      <button id="player-toggle" onclick="togglePlayer()">
+        <img src="../images/cd_audio_cd_a-4.png" alt="Music" />
+      </button>
+
+      <div id="player-panel">
+        <div class="songtitle"></div>
+        <table class="controls">
+          <tr>
+            <td>
+              <div class="prev-track" onclick="prevTrack()">
+                <i class="fas fa-backward"></i>
+              </div>
+            </td>
+            <td>
+              <div class="playpause-track" onclick="playpauseTrack()">
+                <i class="fas fa-play"></i>
+              </div>
+            </td>
+            <td>
+              <div class="next-track" onclick="nextTrack()">
+                <i class="fas fa-forward"></i>
+              </div>
+            </td>
+            <td>
+              <a id="track-link" href="#" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+            </td>
+          </tr>
+        </table>
+        <div class="seeking">
+          <div class="current-time">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
+          <div class="total-duration">0:00</div>
+        </div>
+        <audio id="music" src=""></audio>
+      </div>
+    </div>
+    <script type="text/javascript" src="../music.js"></script>
+
     <!--<hr class="divider" style="margin-top: 0.5rem" />-->
 
     <div class="projects">
@@ -150,7 +230,7 @@
 
       <section class="project box">
         <a href="https://lynyou.com">
-          <div class="label">lynU</div>
+          <div class="label lynu">lynU</div>
         </a>
         <div class="names">aka lynion</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Jul 2024 – now</div>
@@ -182,7 +262,7 @@
 
       <section class="project box">
         <a href="https://lynyou.com/redletterdiary">
-          <div class="label">red letter diary</div>
+          <div class="label rld">red letter diary</div>
         </a>
         <div class="names">aka katie kross, Lyn Rivers, a red letter day</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Sep 2024 – now</div>
@@ -209,7 +289,7 @@
 
       <section class="project box">
         <a href="https://lynyou.com/yuzu">
-          <div class="label">yuzu</div>
+          <div class="label yuzu">yuzu</div>
         </a>
         <div class="names">aka yuzuberri</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Dec 2025 – now</div>
@@ -229,7 +309,7 @@
       </section>
 
       <section class="project box">
-        <div class="label">laurel</div>
+        <div class="label laurel">laurel</div>
         <div class="names">aka yanny</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Dec 2023 – now</div>
         <ul>
@@ -253,7 +333,7 @@
       <div class="section-title" id="formermain">former main aliases</div>
 
       <section class="project box">
-        <div class="label">c4pri</div>
+        <div class="label capri">c4pri</div>
         <div class="names">aka ☆ capri ☆</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active May 2020 – Dec 2023</div>
         <ul>
@@ -280,7 +360,7 @@
       </section>
 
       <section class="project box">
-        <div class="label">valetical</div>
+        <div class="label val">valetical</div>
         <!--  <div class="names">aka v_letical, val, valware</div> -->
         <div class="soft2" style="margin-bottom: 0.8rem">active Oct 2022 – Nov 2024</div>
         <ul>
@@ -311,7 +391,7 @@
       <div class="section-title" id="formerprojects">former projects</div>
 
       <section class="project box">
-        <div class="label">katie kross</div>
+        <div class="label katie">katie kross</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Feb 2024 – Oct 2025</div>
         <ul>
           <li>
@@ -359,7 +439,7 @@
       </section>
 
       <section class="project box">
-        <div class="label">sienna</div>
+        <div class="label sienna">sienna</div>
         <div class="names">aka siennacell</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Jan 2024 – Jul 2025</div>
         <ul>
@@ -446,7 +526,7 @@
       <div class="section-title" id="collectives">collectives</div>
 
       <section class="project box">
-        <div class="label">afflicted</div>
+        <div class="label afflicted">afflicted</div>
         <div class="soft2" style="margin-bottom: 0.8rem">active Aug 2022 – Nov 2024</div>
         <ul>
           <li>
@@ -493,5 +573,6 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="../scripts/menu.js"></script>
   </body>
 </html>

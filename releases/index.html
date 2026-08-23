@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>lynU</title>
+        <link rel="icon" type="image/png" href="images/icon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+
+        <!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣴⣦⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⣿⠿⠿⠿⠿⣿⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣾⣿⣿⡿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢿⣿⣿⣶⡀⠀⠀⠀⠀
+⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⠀⣶⣶⣶⣶⡆⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣦⠀⠀⠀
+⠀⠀⣼⣿⣿⠋⠀⠀⠀⠀⠀⠛⠛⢻⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣧⠀⠀
+⠀⢸⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡇⠀
+⠀⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⠀
+⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡟⢹⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⣹⣿⣿⠀
+⠀⣿⣿⣷⠀⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⢻⣿⣿⡄⠀⠀⠀⠀⠀⠀⣿⣿⡿⠀
+⠀⢸⣿⣿⡆⠀⠀⠀⠀⣴⣿⡿⠃⠀⠀⠀⠈⢿⣿⣷⣤⣤⡆⠀⠀⣰⣿⣿⠇⠀
+⠀⠀⢻⣿⣿⣄⠀⠀⠾⠿⠿⠁⠀⠀⠀⠀⠀⠘⣿⣿⡿⠿⠛⠀⣰⣿⣿⡟⠀⠀
+⠀⠀⠀⠻⣿⣿⣧⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⠏⠀⠀⠀
+⠀⠀⠀⠀⠈⠻⣿⣿⣷⣤⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⠟⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⠿⠋⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠛⠛⠛⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+active since 5/12/26
+-->
+        <style>
+            body::before {
+                position: fixed;
+                inset: 0;
+                background: url("../images/purplestars.gif");
+                background-repeat: repeat;
+                opacity: 0.7;
+                pointer-events: none;
+                z-index: -1;
+            }
+
+            body {
+                background: #000;
+                color: #fff;
+                max-width: 800px;
+            }
+
+            .releasebox {
+                position: relative;
+                padding: 12px;
+                background-clip: padding-box;
+                border: 25px solid transparent;
+                border-image: url("../images/textbox.gif") 15 / 25px repeat;
+                border-image-slice: 27.6% fill;
+                box-sizing: border-box;
+                image-rendering: pixelated;
+                color: white;
+            }
+            /*            
+            .releasetitle {
+                font-family: "Delta Sans";
+            }
+            */
+        </style>
+    </head>
+
+    <body>
+        <!--<div class="scrollwrap"><div class="scrollstuff">★ (^_^) ★</div></div>-->
+        <!--<div class="scrollwrap"><div class="scrollstuff">a</div></div>-->
+
+        <nav class="sitemenu">
+            <a href="/">home</a>
+            <a href="/about">about me</a>
+            <a href="/releases">releases</a>
+            <a href="/archive">other projects</a>
+        </nav>
+
+        <!--<a href="/archive" class="archive-link">other projects / archive →</a>-->
+
+        <!--Music player-->
+        <div id="musicplayer">
+            <button id="player-toggle" onclick="togglePlayer()">
+                <img src="../images/cd_audio_cd_a-4.png" alt="Music" />
+            </button>
+
+            <div id="player-panel">
+                <div class="songtitle"></div>
+                <table class="controls">
+                    <tr>
+                        <td>
+                            <div class="prev-track" onclick="prevTrack()">
+                                <i class="fas fa-backward"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="playpause-track" onclick="playpauseTrack()">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="next-track" onclick="nextTrack()">
+                                <i class="fas fa-forward"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <a id="track-link" href="#" target="_blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="seeking">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
+                    <div class="total-duration">0:00</div>
+                </div>
+                <audio id="music" src=""></audio>
+            </div>
+        </div>
+        <script type="text/javascript" src="../music.js"></script>
+
+        <div class="releasebox">
+            <table class="music-table">
+                <thead>
+                    <tr>
+                        <th>cover</th>
+                        <th>release</th>
+                        <th>release date</th>
+                        <th>type</th>
+                        <th>runtime</th>
+                        <th>platforms</th>
+                        <th>rating</th>
+                    </tr>
+                </thead>
+                <tbody id="release-list"></tbody>
+            </table>
+        </div>
+
+        <script src="../scripts/releaseslynu.js"></script>
+        <script src="../scripts/releaserender.js"></script>
+
+        <div class="year">
+            <span>© <span id="year"></span> lynU</span>
+        </div>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

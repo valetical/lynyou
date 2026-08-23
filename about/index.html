@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>about me ~ lynU</title>
+        <link rel="icon" type="image/png" href="../images/icon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+
+        <style>
+            body::before {
+                position: fixed;
+                inset: 0;
+                background: url("../images/purplestars.gif");
+                background-repeat: repeat;
+                opacity: 0.7;
+                pointer-events: none;
+                z-index: -1;
+            }
+
+            body {
+                background: #000;
+                color: #fff;
+                max-width: 800px;
+            }
+
+            .aboutbox {
+                position: relative;
+                padding: 12px;
+                background: rgba(0, 0, 0, 1);
+                background-clip: padding-box;
+                border: 25px solid transparent;
+                border-image: url("../images/textbox.gif") 15 / 25px repeat;
+                border-image-slice: 27.6% fill;
+                box-sizing: border-box;
+                image-rendering: pixelated;
+                color: white;
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .aboutbox h1 {
+                font-size: 1.4rem;
+                font-weight: normal;
+                margin-bottom: 15px;
+            }
+
+            .aboutbox h2 {
+                font-size: 24px;
+                font-weight: normal;
+                margin-top: 25px;
+                margin-bottom: 8px;
+                color: #ff6b6b;
+                font-family: ralsei;
+                text-align: center;
+            }
+
+            .aboutbox p {
+                font-size: 18px;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+            .highlight {
+                color: #c58cff;
+            }
+
+            .about-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 25px 0 10px;
+            }
+
+            .about-image img {
+                max-width: 220px;
+                width: 100%;
+                height: auto;
+            }
+
+            .facts {
+                margin: 15px 0;
+                padding: 12px;
+                border-top: 1px solid #333;
+                border-bottom: 1px solid #333;
+            }
+
+            .facts div {
+                margin: 5px 0;
+            }
+
+            .stufflabel {
+                font-family: "Tension Points";
+                color: #9c53a5;
+                font-size: 18px;
+            }
+
+            .clickthis {
+                font-family: "delta sans";
+                color: #c6c6c6;
+                font-size: 19px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="sitemenu">
+            <a href="/">home</a>
+            <a href="/about">about me</a>
+            <a href="/releases">releases</a>
+            <a href="/archive">other projects</a>
+        </nav>
+
+        <!--Music player-->
+        <div id="musicplayer">
+            <button id="player-toggle" onclick="togglePlayer()">
+                <img src="../images/cd_audio_cd_a-4.png" alt="Music" />
+            </button>
+
+            <div id="player-panel">
+                <div class="songtitle"></div>
+                <table class="controls">
+                    <tr>
+                        <td>
+                            <div class="prev-track" onclick="prevTrack()">
+                                <i class="fas fa-backward"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="playpause-track" onclick="playpauseTrack()">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="next-track" onclick="nextTrack()">
+                                <i class="fas fa-forward"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <a id="track-link" href="#" target="_blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="seeking">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
+                    <div class="total-duration">0:00</div>
+                </div>
+                <audio id="music" src=""></audio>
+            </div>
+        </div>
+        <script type="text/javascript" src="../music.js"></script>
+
+        <div class="aboutbox">
+            <div class="stuff">
+                <div><span class="stufflabel">name:</span> lyn <span class="smallthing"> - or val</span></div>
+                <div><span class="stufflabel">pronouns:</span> they/them</div>
+                <div><span class="stufflabel">age:</span> 17<span class="smallthing"> - Jan 9, 2009</span></div>
+            </div>
+
+            <h2>about me</h2>
+
+            <p>
+                i've been making music since around 2017 but didn't take it "seriously" until 2020 or so. you can find
+                info about some of my old / inactive aliases in the
+                <a href="/archive"><span class="clickthis">other projects</span></a> page.
+            </p>
+
+            <p>
+                my earliest music
+                <span class="soft">(2017-2019)</span> mostly consisted of "meme rap" or dumb songs i would make with my
+                friends. in 2020, i started releasing music as <a href="/c4pri">c4pri</a> and wanted to create more
+                "serious" songs. late 2021 is when i decided to actually try to improve at producing.
+            </p>
+            <p>
+                i don't think i've ever really had a specific plan for what i wanted to do with music which probably
+                explains all the different aliases and side projects i've started. i've been lucky enough to have people
+                stick around through all of that and i'm super grateful. i'm still learning more about myself all the
+                time so i don't think i'll ever be fully satisfied or done figuring out what i want my music to sound
+                like
+            </p>
+
+            <h2>other interests</h2>
+
+            <p>
+                Outside of music, i have always had a love for valve games (Half-Life, Portal, Left 4 Dead), old
+                technology, early internet culture,
+                <a href="https://www.undertale.com">UNDERTALE</a> /
+                <a href="https://www.undertale.com"><span class="clickthis">deltarune</span></a
+                >, and obviously Nintendo
+            </p>
+
+            <h2>this website</h2>
+
+            <p>
+                if you have been familiar with me for a while you would know i have struggled with sticking to one
+                identity throughout the years so i wanted a way to document my stuff and to keep everything in one place
+            </p>
+        </div>
+
+        <div class="year">
+            <span>© <span id="year"></span> lynU</span>
+        </div>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

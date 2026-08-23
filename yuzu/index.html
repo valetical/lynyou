@@ -13,7 +13,7 @@
         background: url("../images/Texture_other_060.gif");
         background-repeat: repeat;
 
-        opacity: 0.4;
+        opacity: 0.1;
       }
 
       body {
@@ -22,6 +22,50 @@
         max-width: 800px;
         padding-top: 25px;
       }
+
+      .header {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .yuzu {
+        display: flex;
+        justify-content: right;
+        align-items: cent;
+        gap: 5px;
+        font-size: 48px;
+        font-family: "Delta Sans";
+      }
+
+      .yuzulinks {
+        display: flex;
+        justify-content: right;
+        gap: 20px;
+        margin-top: 7px;
+        font-family: "Tension Points";
+      }
+
+      .yuzulinks a {
+        font-size: 32px;
+      }
+
+      /*
+      .kaw {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .kaw img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        image-rendering: pixelated;
+      }
+*/
 
       .box {
         width: 426px;
@@ -35,65 +79,107 @@
         image-rendering: pixelated;
         color: white;
       }
+
+      .releasebox {
+        position: relative;
+        padding: 12px;
+        background: rgba(0, 0, 0, 1);
+        background-clip: padding-box;
+        border: 25px solid transparent;
+        border-image: url("../images/textbox.gif") 15 / 25px repeat;
+        border-image-slice: 27.6% fill;
+        box-sizing: border-box;
+        image-rendering: pixelated;
+        color: white;
+      }
+
+      .sitemenu {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 8px 20px;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+      }
+
+      .sitemenu a {
+        font-family: "8BitOperator Faithful";
+      }
     </style>
   </head>
 
   <body>
-    <a href="https://lynyou.com" class="back">← home</a>
-
     <!--Music player-->
-    <div id="musicplayer" style="margin-bottom: 10px; margin-right: 0.5%">
-      <!--<div><marquee scrollamount="8" class="songtitle"></marquee></div>-->
-      <div class="songtitle"></div>
-      <table class="controls">
-        <tr>
-          <td>
-            <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
-          </td>
-          <td>
-            <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-play"></i></div>
-          </td>
-          <td>
-            <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
-          </td>
-          <td>
-            <a id="track-link" href="#" target="_blank">
-              <i class="fas fa-link"></i>
-            </a>
-          </td>
-        </tr>
-      </table>
-      <div class="seeking">
-        <div class="current-time">00:00</div>
-        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
-        <div class="total-duration">0:00</div>
-      </div>
-      <audio id="music" src=""></audio>
-    </div>
+    <div id="musicplayer">
+      <button id="player-toggle" onclick="togglePlayer()">
+        <img src="../images/cd_audio_cd_a-4.png" alt="Music" />
+      </button>
 
+      <div id="player-panel">
+        <div class="songtitle"></div>
+        <table class="controls">
+          <tr>
+            <td>
+              <div class="prev-track" onclick="prevTrack()">
+                <i class="fas fa-backward"></i>
+              </div>
+            </td>
+            <td>
+              <div class="playpause-track" onclick="playpauseTrack()">
+                <i class="fas fa-play"></i>
+              </div>
+            </td>
+            <td>
+              <div class="next-track" onclick="nextTrack()">
+                <i class="fas fa-forward"></i>
+              </div>
+            </td>
+            <td>
+              <a id="track-link" href="#" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+            </td>
+          </tr>
+        </table>
+        <div class="seeking">
+          <div class="current-time">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
+          <div class="total-duration">0:00</div>
+        </div>
+        <audio id="music" src=""></audio>
+      </div>
+    </div>
     <script type="text/javascript" src="../music.js"></script>
 
-    <div class="box">
-      <div>
-        <div class="label" style="margin-bottom: 0.8rem">* yuzu</div>
-
-        <ul>
-          <li>
-            <a href="https://soundcloud.com/yuzuberri"><span class="sc">SoundCloud</span></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@yuzuberr1"><span class="yt">YouTube</span></a>
-          </li>
-        </ul>
+    <div class="header">
+      <div class="yuzu">
+        <span>yuzu</span>
+        <!-- 
+       <div class="kaw">
+          <img class="kaw1" src="../images/Kawkaw_battle_idle.gif" />
+          <img class="kaw2" src="../images/Kawkaw_battle_spared.gif" />
+        </div>
+-->
       </div>
 
+      <div class="yuzulinks">
+        <a href="https://soundcloud.com/yuzuberri">
+          <span class="sc">soundcloud</span>
+        </a>
+
+        <a href="https://www.youtube.com/@yuzuberr1">
+          <span class="yt">youtube</span>
+        </a>
+      </div>
+    </div>
+
+    <div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-
-      <div class="kaw">
-        <img class="kaw1" src="../images/Kawkaw_battle_idle.gif" />
-        <img class="kaw2" src="../images/Kawkaw_battle_spared.gif" />
-      </div>
 
       <script>
         var kaw = new Howl({
@@ -115,6 +201,7 @@
         });
       </script>
     </div>
+
     <div class="releasebox">
       <table class="music-table">
         <thead>
@@ -142,5 +229,6 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="../scripts/menu.js"></script>
   </body>
 </html>
