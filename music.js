@@ -42,12 +42,12 @@ let track_list = [
 		dl: "https://file.garden/ad5_FaJMmVnp7v37/Pattern%201_192%20-%20Loop_3.mp3"
 	},
 	{
-		name: "yuzu - Until Next Time (Battle 3) [Arrangement]",
+		name: "yuzu - Until Next Time [Arrangement]",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/untilnexttime_128kbps_edit.mp3",
 		dl: "https://file.garden/ad5_FaJMmVnp7v37/untilnexttime_128kbps_edit.mp3"
 	},
 	{
-		name: "lynU - debris [ending only]",
+		name: "lynU - debris [outro]",
 		path: "https://file.garden/ad5_FaJMmVnp7v37/debrisending_128kbps_edit.mp3",
 		dl: "https://soundcloud.com/v_letical/debris"
 	},
