@@ -7,7 +7,7 @@ const artistlinks = {
   shayz: "https://soundcloud.com/deltarunebrainrot",
   lor: "https://soundcloud.com/lorrific",
   angelvision: "https://soundcloud.com/angelsvision",
-  xyy: "https://soundcloud.com/xyjlr",
+  xyy: "https://xyy.fm",
   bennyzer0: "https://soundcloud.com/margolover",
   "Vision Crew": "https://soundcloud.com/dr-fansong-thing",
   lexxiemow: "https://soundcloud.com/lexxiemoww",

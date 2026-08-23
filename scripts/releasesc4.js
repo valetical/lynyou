@@ -96,6 +96,23 @@ const releases = [
         rating: 0,
         credits: ["c4pri - production, vocals", "isai - vocals"]
     },
+      {
+    title: "packedd",
+    cover: "https://i1.sndcdn.com/artworks-YKL5oIOKYn0nqhKh-hyLqaA-t500x500.jpg",
+    date: "5/29/23",
+    type: "collab",
+    runtime: "2:11",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 3,
+    credits: [
+      "afflicted",
+      "Alyx Trick - vocals",
+      "c4pri - vocals",
+      "crusafix - vocals",
+      "isai - vocals",
+      "erdo - production, artwork"
+    ]
+  },
     {
         title: "mr. guap getter",
         cover: "https://i1.sndcdn.com/artworks-FwCgxPzNqPE0zGUk-gO3VWw-t500x500.jpg",
@@ -107,6 +124,16 @@ const releases = [
         rating: 2,
         credits: ["c4pri - vocals", "erdo - production"]
     },
+      {
+    title: "firstplace",
+    cover: "https://i1.sndcdn.com/artworks-PbzSjLrX7TS7mRFG-yJWNow-t500x500.jpg",
+    date: "4/5/23",
+    type: "collab",
+    runtime: "2:18",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 0,
+    credits: ["afflicted", "c4pri - vocals", "crusafix - vocals", "akkiro - vocals", "mycorpsebride - production"]
+  },
     {
         title: "lose it",
         cover: "https://i1.sndcdn.com/artworks-KIH6eJ5IbK8sk24t-XdLMCw-t500x500.jpg",
@@ -117,6 +144,17 @@ const releases = [
         rating: 0,
         credits: ["c4pri - production, vocals", "imsg - vocals", "crusafix - vocals"]
     },
+      {
+    title: "deadeye",
+    cover: "https://i1.sndcdn.com/artworks-KzEltOTbqkdWgVuE-ZooiGg-t500x500.jpg",
+    date: "2/22/23",
+    type: "collab",
+    runtime: "2:00",
+    platforms: ["sc", "spt", "apl", "yt"],
+    flp: "https://store.lynyou.com/b/zopTE",
+    rating: 3,
+    credits: ["afflicted", "crusafix - vocals", "c4pri - vocals", "isai - vocals", "erdo - production"]
+  },
     {
         title: "omg",
         cover: "https://i1.sndcdn.com/artworks-ZouTz6VcIT2WwzA2-jU0yMw-t500x500.jpg",
@@ -138,6 +176,29 @@ const releases = [
         rating: 3,
         credits: ["c4pri - production, vocals", "mycorpsebride - vocals"]
     },
+    {
+    title: "paramedics cypher",
+    cover: "https://i1.sndcdn.com/artworks-gdNSmuoaqtX6Yj0t-b33GZA-t500x500.jpg",
+    date: "11/19/22",
+    type: "collab",
+    runtime: "4:53",
+    platforms: ["sc", "spt", "apl", "yt"],
+    rating: 0,
+    credits: [
+      "afflicted",
+      "crusafix - vocals",
+      "Alyx Trick - vocals",
+      "crusey - vocals",
+      "w!ldflwr - vocals",
+      "deepinparis - vocals",
+      "mycorpsebride - vocals",
+      "breakupbreakdown - vocals",
+      "akkiro - vocals",
+      "prkr blu - vocals",
+      "c4pri - vocals",
+      "erdo - production, vocals, artwork"
+    ]
+  },
     {
         title: "it's all mine",
         cover: "https://i1.sndcdn.com/artworks-DZjzHKWowye53IT0-X52vEw-t500x500.jpg",
@@ -367,5 +428,5 @@ const releases = [
         platforms: ["sc", "spt", "apl", "yt"],
         rating: 1,
         credits: ["c4pri - vocals", "shyburial - production"]
-    }
+    },
 ];

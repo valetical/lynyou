@@ -771,7 +771,7 @@ const releases = [
   {
     title: "packedd",
     cover: "https://i1.sndcdn.com/artworks-YKL5oIOKYn0nqhKh-hyLqaA-t500x500.jpg",
-    date: "5/9/23",
+    date: "5/29/23",
     type: "collab",
     runtime: "2:11",
     platforms: ["sc", "spt", "apl", "yt"],
