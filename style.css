@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "dtmsans";
+    font-family: "DTM Sans";
     src: url("/fonts/dtm-sans.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "reddit";
+    font-family: "Reddit Mono";
     src: url("/fonts/RedditMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-    font-family: "mewmew";
+    font-family: "Mad Mew Mew";
     src: url("/fonts/mad-mew-mew.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -34,27 +34,27 @@
 }
 
 @font-face {
-    font-family: "8bit";
-    src: url("/fonts/8bitoperator-faithful.ttf") format("truetype");
+    font-family: "8BitOperator Faithful";
+    src: url("/fonts/8BitOperator Faithfuloperator-faithful.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "8bit2";
-    src: url("/fonts/8bitoperator-faithful-light.ttf") format("truetype");
+    font-family: "8BitOperator Faithful Light";
+    src: url("/fonts/8BitOperator Faithfuloperator-faithful-light.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "delta";
+    font-family: "Delta Sans";
     src: url("/fonts/delta-sans.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: "tp";
+    font-family: "Tension Points";
     src: url("/fonts/tension-points.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -88,7 +88,7 @@ body::before {
 
 body {
     color: #fff;
-    font-family: "dtmsans", monospace;
+    font-family: "DTM Sans", monospace;
     font-size: 22px;
     line-height: 1.3;
     max-width: 500px;
@@ -183,7 +183,7 @@ ul {
 
 .sitemenu a {
     color: #cbcbcb;
-    font-family: "delta";
+    font-family: "Delta Sans";
 }
 
 .sitemenu a:hover {
@@ -254,7 +254,7 @@ ul {
     right: 20px;
     bottom: 20px;
     z-index: 9999;
-    font-family: "reddit", monospace;
+    font-family: "Reddit Mono", monospace;
 }
 
 #player-toggle {
@@ -578,7 +578,7 @@ section:hover {
     max-width: calc(100vw - 30px);
     overflow-x: auto;
     overflow-y: hidden;
-    font-family: "reddit", monospace;
+    font-family: "Reddit Mono", monospace;
 }
 
 .music-table {
@@ -623,7 +623,9 @@ section:hover {
     margin-top: 3px;
 }
 
-.date,.type,.runtime {
+.date,
+.type,
+.runtime {
     color: #666;
     white-space: nowrap;
     font-size: 14px;
