@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+            }
+
+            img {
+                width: 500px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <img src="lol.png" id="lol" />
+
+        <audio id="audio" src="IFYOUKNOWTHENYOUKNOW.mp3"></audio>
+
+        <script>
+            document.getElementById("lol").onclick = function () {
+                document.getElementById("audio").play();
+            };
+        </script>
+    </body>
+</html>

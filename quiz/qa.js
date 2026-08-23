@@ -25,7 +25,7 @@ const questions = [
         question: "which release came out on valentines day?",
         answers: ["drafts", "post-dream", "katie kross (self titled)", "I"],
         correct: "red letter diary - drafts",
-        wrong: "How could u forget this"
+        wrong: "How could u forget this..."
     },
 
     {
@@ -39,14 +39,14 @@ const questions = [
         question: "what was the name of the scrapped valetical/lynU project from 2024?",
         answers: ["daydream", "overdosage", "post-reverie", "day of the dead girl"],
         correct: "day of the dead girl",
-        wrong: "Real ones know the last 3 songs on the valetical page are from that scrapped project"
+        wrong: "real ones know the last 3 songs on the valetical page are from that scrapped project (≖⩊≖)"
     },
 
     {
         question: "which alias originally released <i>i'll never change</i>?",
         answers: ["c4pri", "lynU", "valetical", "bleedingcanvas"],
         correct: "c4pri",
-        wrong: "<i>i'll never change</i> was released as c4pri and later changed to valetical"
+        wrong: "<i>i'll never change</i> was released as c4pri and later changed to valetical >⩊<"
     },
 
     {
@@ -60,7 +60,7 @@ const questions = [
         question: "which c4pri song was produced by xaev?",
         answers: ["deathwish", "Tell me", "catchUp", "Star"],
         correct: "catchUp",
-        wrong: "wrong. xaev produced <i>catchUp</i>"
+        wrong: "wrong.. xaev produced <i>catchUp</i>"
     },
 
     {
@@ -68,6 +68,6 @@ const questions = [
             "ok last one. what song is this beat from?<br><br><audio controls><source src='sound/quizbeatsnip.mp3' type='audio/mpeg'></audio>",
         answers: ["Test.Ur.Luck", "Sacrifice", "if you know...", "Tell me"],
         correct: "Tell me",
-        wrong: "come on...."
+        wrong: "come on.... (¬_¬)"
     }
 ];

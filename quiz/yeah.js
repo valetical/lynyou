@@ -10,7 +10,7 @@ function startQuiz() {
     document.getElementById("quiz-screen").style.display = "block";
     document.getElementById("name").value = "";
     document.getElementById("name").disabled = false;
-    document.getElementById("submit-score").style.display = "inline-block";
+    document.getElementById("submitscore").style.display = "inline-block";
     document.getElementById("submitted").innerHTML = "";
     showQuestion();
 }
@@ -106,7 +106,7 @@ async function submitScore() {
         return;
     }
 
-    const button = document.getElementById("submit-score");
+    const button = document.getElementById("submitscore");
 
     button.disabled = true;
     button.textContent = "SUBMITTING...";

@@ -91,11 +91,31 @@
                 font-size: 14px;
                 border: 1px solid #999;
             }
-            #submit-score {
+            #submitscore {
                 margin-left: 5px;
             }
             #submitted {
                 margin-top: 10px;
+            }
+
+            .sienna {
+                margin: 20px auto;
+                padding: 10px;
+                width: 90%;
+                background: #fff0fa;
+                border: 1px dashed #ff69b4;
+                color: #444;
+                font-family: "Comic Sans MS";
+                font-size: 13px;
+                text-align: left;
+            }
+
+            .sienna b {
+                color: #ff1493;
+            }
+
+            .sienna p {
+                margin: 8px 0;
             }
         </style>
     </head>
@@ -104,12 +124,42 @@
         <div class="quiz">
             <div id="start-screen" class="screen">
                 <h1>☆ LYN*YOU ☆</h1>
-                <p>~ welcome 2 my Awesome MusiC Quiz ~</p>
-                <p>10Questions. how much do you really know?</p>
+                <p>~ welcome 2 my MusiC Quiz ~</p>
+                <p>10.Questions... how much do you really know?</p>
                 <!--<button onclick="startQuiz()">START QUIZ</button>-->
                 <button onclick="startQuiz()" style="border: 0; padding: 0; background: none">
                     <img src="takequiz.gif" alt="START QUIZ" />
                 </button>
+
+                <div class="sienna">
+                    <p>haii!! i'm <b>sienna ♥</b><br /></p>
+
+                    <p>
+                        I made this quiz becuz im literally OBSESSED W/ lyn's music. my fav songs r probably debris,
+                        need me ft alyx trick and hurtz!!! their music is like my whole personality rn lol. OH and sorry
+                        if this quiz isnt that good.. ive never done this b4 but ive been seeing all sorts of quizses
+                        online so i wanted to try :p i hope u like it!! If U have any feedback send it to me on my
+                        website
+                        <a href="sienna/">siennasworld.com</a> !! My friends have told me im a "Newgen" or whatever but
+                        idc &gt;:( Ive been a fan 4 like FOREVER
+                    </p>
+                    <p>
+                        also if u get 10/10 then ur officially my best friend &lt;3333!!!!! but if u get 0/10...
+                        ummmm... listen to more lyn and try again!
+                    </p>
+
+                    <p>
+                        btw i make music too!! my soundcloud is
+                        <a href="https://soundcloud.com/siennacell">siennacell</a> if u wanna check it out :3 i make
+                        kinda Weird music lol but i like it!!! maybe one day lyn will listen to my songs... A girl can
+                        dream &lt;333
+                    </p>
+
+                    <p>
+                        xoxo,<br />
+                        <b>sienna ♥</b>
+                    </p>
+                </div>
             </div>
 
             <div id="quiz-screen">
@@ -129,7 +179,7 @@
                 <p id="final-message"></p>
                 <p>enter ur name to submit ur score:</p>
                 <input type="text" id="name" placeholder="ur name" maxlength="50" />
-                <button id="submit-score" onclick="submitScore()">SUBMIT SCORE</button>
+                <button id="submitscore" onclick="submitScore()">SUBMIT SCORE</button>
                 <p id="submitted"></p>
                 <button onclick="startQuiz()">TAKE IT AGAIN</button>
             </div>
