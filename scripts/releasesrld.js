@@ -231,7 +231,7 @@ const releases = [
     type: "single",
     runtime: "2:02",
     platforms: ["sc", "spt", "apl", "yt"],
-    rating: 0,
+    rating: 2,
     credits: ["lynU - production, vocals"]
   },
 
@@ -242,7 +242,7 @@ const releases = [
     type: "single",
     runtime: "1:57",
     platforms: ["sc", "spt", "apl", "yt"],
-    rating: 0,
+    rating: 2,
     credits: ["lynU - production, vocals"]
   },
 
