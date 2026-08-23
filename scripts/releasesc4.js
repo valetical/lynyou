@@ -1,5 +1,5 @@
 const artistlinks = {
-    lynU: "https://soundcloud.com/lynyou",
+    lynU: "https://lynyou.com",
     valetical: "https://soundcloud.com/v_letical",
     yuzu: "https://soundcloud.com/yuzuberri",
     c4pri: "https://soundcloud.com/c4v",

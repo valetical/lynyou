@@ -15,7 +15,7 @@ const artistlinks = {
   Throwaway: "https://soundcloud.com/user454494283",
   "° .✝︎˚∘[• ᴍɪᴋᴇ'ꜱ ʜᴜꜱʙᴀɴᴅ •]° .✝︎˚∘": "https://soundcloud.com/o-o-729209251",
   yuzu: "https://soundcloud.com/yuzuberri",
-  lynU: "https://soundcloud.com/lynyou",
+  lynU: "https://lynyou.com",
   urchin_ltd: "https://x.com/urchin_ltd",
   anothermedian: "https://soundcloud.com/anothermedian",
   "Hatsune Miku": "https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01_us"
