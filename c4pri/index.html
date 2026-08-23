@@ -3,26 +3,36 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>c4pri</title>
+        <title>red letter diary</title>
         <link rel="icon" type="image/png" href="../images/cropp.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
         <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
 
         <style>
             body::before {
-                background-image: none;
-                background-color: black;
+                content: "";
+                position: fixed;
+                inset: 0;
+
+                background: url("../images/160.gif");
+                background-repeat: repeat;
+
+                opacity: 0.2;
+                pointer-events: none;
+                z-index: -1;
             }
 
             body {
-                font-family: monospace;
-                max-width: 1000px;
+                background: #000;
+                color: #fff;
+                font-family: Verdana;
+                max-width: 800px;
             }
 
             .name {
                 margin-top: 20px;
                 margin-bottom: 10px;
-                font-size: 32px;
+                font-size: 48px;
                 text-align: center;
             }
 
@@ -41,12 +51,12 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                gap: 30px;
+                gap: 80px;
                 list-style: none;
             }
 
             .links li {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
 
             .navigate {
@@ -62,16 +72,35 @@
             }
 
             .releasebox {
-                border: 0px solid #fff;
+                border: 0px solid #4c4c4c;
+                background-color: rgb(0, 0, 0, 0.7);
+                font-family: Verdana;
+            }
+
+            .sitemenu {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin: 0 0 30px;
+                padding: 5px 20px;
+                background: transparent;
+                border: none;
+                font-size: 20px;
+            }
+
+            .sitemenu a {
+                font-family: Verdana;
             }
         </style>
     </head>
 
     <body>
-        <div class="navigate">
+<!--        <div class="navigate">
             <a href="https://lynyou.com" class="back">← home</a>
             <a href="https://lynyou.com/archive" class="back2">other projects / archive →</a>
-        </div>
+        </div>-->
 
         <div class="name">
             <span>c4pri</span>
@@ -118,5 +147,7 @@
         <div class="year">
             <span>© <span id="year"></span> lynU</span>
         </div>
+        
+                <script src="../scripts/menu.js"></script>
     </body>
 </html>
