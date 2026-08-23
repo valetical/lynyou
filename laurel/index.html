@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>luv</title>
+        <style>
+            body {
+                background-color: black;
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+            }
+
+            .play-button {
+                margin-top: 20px;
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                border: 0px;
+                background: #000000;
+                color: white;
+                font-size: 36px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="Spinning_Dancer.gif" />
+        <script>
+            var music = new Audio();
+            function playMusic() {
+                var songs = ["luvedit.mp3", "luvedit2.mp3"];
+                var randomSong = songs[Math.floor(Math.random() * songs.length)];
+                music.src = randomSong;
+                music.currentTime = 0;
+                music.play();
+            }
+        </script>
+        <button class="play-button" onclick="playMusic()">▶</button>
+    </body>
+</html>
