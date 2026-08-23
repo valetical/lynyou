@@ -623,9 +623,7 @@ section:hover {
     margin-top: 3px;
 }
 
-.date,
-.type,
-.runtime {
+.date,.type,.runtime {
     color: #666;
     white-space: nowrap;
     font-size: 14px;
