@@ -3,7 +3,7 @@ const artistlinks = {
   valetical: "https://soundcloud.com/v_letical",
   yuzu: "https://soundcloud.com/yuzuberri",
   c4pri: "https://soundcloud.com/c4v",
-
+  "red letter diary": "https://soundcloud.com/redletterdiary",
   rel: "https://soundcloud.com/2rel",
   crusafix: "https://soundcloud.com/1crusafix",
   akkiro: "https://soundcloud.com/7akkiro",
@@ -74,7 +74,7 @@ const releases = [
     type: "single",
     runtime: "?",
     rating: 0,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 */
 
@@ -86,7 +86,7 @@ const releases = [
     runtime: "1:53",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -97,7 +97,7 @@ const releases = [
     runtime: "1:44",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -108,7 +108,7 @@ const releases = [
     runtime: "2:25",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -119,7 +119,7 @@ const releases = [
     runtime: "2:26",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -130,7 +130,7 @@ const releases = [
     runtime: "2:06",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -141,7 +141,7 @@ const releases = [
     runtime: "2:04",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 1,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -152,7 +152,7 @@ const releases = [
     runtime: "3:00",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 2,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -163,7 +163,7 @@ const releases = [
     runtime: "1:34",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -174,7 +174,7 @@ const releases = [
     runtime: "14:46",
     platforms: ["sc", "spt", "apl", "yt", "bc"],
     rating: 3,
-    credits: ["lynU - production, vocals", "ellie mills - vocals (track 2)"],
+    credits: ["red letter diary - production, vocals", "ellie mills - vocals (track 2)"],
     tracks: [
       ["How to die standing still", "3:20"],
       ["Broke my promise", "2:19"],
@@ -192,7 +192,7 @@ const releases = [
     runtime: "7:52",
     platforms: ["sc", "spt", "apl", "yt", "bc"],
     rating: 1,
-    credits: ["lynU - production, vocals"],
+    credits: ["red letter diary - production, vocals"],
     tracks: [
       ["Bother", "1:23"],
       ["Its Cloudy In Here", "1:36"],
@@ -210,7 +210,7 @@ const releases = [
     runtime: "1:32",
     platforms: ["sc"],
     rating: 0,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 */
   {
@@ -221,7 +221,7 @@ const releases = [
     runtime: "1:19",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 3,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -232,7 +232,7 @@ const releases = [
     runtime: "2:02",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 2,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -243,7 +243,7 @@ const releases = [
     runtime: "1:57",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 2,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -254,7 +254,7 @@ const releases = [
     runtime: "1:53",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   },
 
   {
@@ -265,7 +265,7 @@ const releases = [
     runtime: "6:28",
     platforms: ["sc", "spt", "apl", "yt"],
     rating: 0,
-    credits: ["lynU - production, vocals"],
+    credits: ["red letter diary - production, vocals"],
     tracks: [
       ["parking lot", "1:27"],
       ["midden", "1:31"],
@@ -282,6 +282,6 @@ const releases = [
     runtime: "1:13",
     platforms: ["sc"],
     rating: 0,
-    credits: ["lynU - production, vocals"]
+    credits: ["red letter diary - production, vocals"]
   }
 ];
