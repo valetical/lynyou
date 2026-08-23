@@ -15,16 +15,16 @@ const questions = [
     },
 
     {
-        question: "how many tracks are on <i>reverie</i>, including the bonus tracks?",
+        question: "how many tracks are on <i>reverie</i>? (including the bonus tracks)",
         answers: ["9", "7", "11", "8"],
         correct: "9",
         wrong: "Count again"
     },
 
     {
-        question: "which release came out on valentines day?",
+        question: "which of these came out on valentines day?",
         answers: ["drafts", "post-dream", "katie kross (self titled)", "I"],
-        correct: "red letter diary - drafts",
+        correct: "drafts",
         wrong: "How could u forget this..."
     },
 
@@ -50,14 +50,14 @@ const questions = [
     },
 
     {
-        question: "which c4pri song features vocals from isai?",
+        question: "which song features vocals from isai?",
         answers: ["zombie", "computer", "##nauseous", "watevr"],
         correct: "zombie",
         wrong: "nope. isai appears on <i>zombie</i>"
     },
 
     {
-        question: "which c4pri song was produced by xaev?",
+        question: "which song was produced by xaev?",
         answers: ["deathwish", "Tell me", "catchUp", "Star"],
         correct: "catchUp",
         wrong: "wrong.. xaev produced <i>catchUp</i>"
