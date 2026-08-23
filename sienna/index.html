@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>siennas world</title>
+
+        <style>
+            body::before {
+                content: "";
+                position: fixed;
+                inset: 0;
+                background: url("../../images/purplestar.gif");
+                background-repeat: repeat;
+                opacity: 0.6;
+                z-index: -1;
+            }
+
+            body {
+                background-color: #000000;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 13px;
+            }
+
+            a {
+                color: #0000cc;
+            }
+
+            .site {
+                width: 750px;
+                margin: 20px auto;
+                background: #fff;
+                border: 3px ridge #cccccc;
+            }
+
+            .header {
+                background: #c799d2;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                border-bottom: 3px ridge #cccccc;
+            }
+
+            .header h1 {
+                margin: 0;
+                font-size: 30px;
+            }
+
+            .header p {
+                margin: 4px;
+            }
+
+            .nav {
+                background: #eeeeee;
+                padding: 6px;
+                text-align: center;
+                border-bottom: 1px solid #999;
+            }
+
+            .nav a {
+                margin: 0 10px;
+                font-weight: bold;
+            }
+
+            .content {
+                display: flex;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .main {
+                width: 520px;
+            }
+
+            .side {
+                width: 170px;
+                background: #fff0fa;
+                border: 1px dashed #ff69b4;
+                padding: 8px;
+            }
+
+            .box {
+                border: 1px solid #999;
+                margin-bottom: 15px;
+            }
+
+            .box p {
+                margin: 5px 0;
+            }
+
+            .box-title {
+                background: #ccccff;
+                padding: 4px;
+                font-weight: bold;
+            }
+
+            .box-content {
+                padding: 10px;
+            }
+
+            h2 {
+                color: #ff1493;
+                font-size: 20px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                box-sizing: border-box;
+                margin: 4px 0 10px;
+                padding: 4px;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 13px;
+                border: 1px solid #888;
+            }
+
+            textarea {
+                height: 130px;
+            }
+
+            button {
+                font-family: Arial, sans-serif;
+                font-size: 11px;
+            }
+
+            .red {
+                color: red;
+                font-weight: bold;
+            }
+
+            #sent {
+                color: #ff1493;
+                font-weight: bold;
+            }
+
+            .footer {
+                text-align: center;
+                padding: 10px;
+                background: #eeeeee;
+                border-top: 1px solid #999;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="site">
+            <div class="header">
+                <h1>siennas world</h1>
+                <p id="welcome"></p>
+            </div>
+
+            <div class="nav">
+                <a href="https://lynyou.com">home</a>
+                <a href="https://lynyou.com/404">about me</a>
+                <a href="https://lynyou.com/404">art</a>
+                <a href="https://soundcloud.com/siennacell">music</a>
+                <a href="https://lynyou.com/404">guestbook</a>
+            </div>
+
+            <div class="content">
+                <div class="main">
+                    <div class="box">
+                        <div class="box-title">☆ site updates ☆</div>
+
+                        <div class="box-content">
+                            <p>
+                                <b>08/22/06:</b> omg i finally made my lynU quiz!!!
+                                <a href="https://lynyou.com/quiz">TRY MY NEW QUIZ!!!</a>
+                            </p>
+
+                            <p><b>08/20/06:</b> added my art to the site !!!</p>
+
+                            <p><b>08/12/06:</b> hiwelcome to my website :3</p>
+                        </div>
+                    </div>
+
+                    <div class="box bulletin">
+                        <div class="box-title">☆ siennas bulletin ☆</div>
+
+                        <div class="box-content">
+                            <p>
+                                currently listening:
+                                <b>rei harakami - lust</b>
+                            </p>
+                            <p>
+                                currently watching:
+                                <b>the melancholy of haruhi suzmiya :0</b>
+                            </p>
+                            <p>
+                                currently playing:
+                                <b>super princess peach on the ds ^_^</b>
+                            </p>
+                            <p>mood: ^_^</p>
+                            <p>visitors are always welcome!!!</p>
+                            <p>sign my guestbook pls &lt;3</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-title">☆ send me a message ☆</div>
+                        <div class="box-content">
+                            <h2>hai!</h2>
+                            <p class="red">talk to me about LITERALLY anything lol</p>
+                            <form id="email-form">
+                                <label>your name:</label>
+                                <input type="text" id="name" required />
+                                <label>your email:</label>
+                                <input type="email" id="from" required />
+                                <label>your message:</label>
+                                <textarea id="message" required></textarea>
+                                <button type="submit">send it</button>
+                            </form>
+                            <p id="sent"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side">
+                    <p style="text-align: center">
+                        <b>about meeee</b>
+                    </p>
+                    <p>
+                        name: sienna<br />
+                        age: 16<br />
+                        location: somewhere lol..<br />
+                        sign: libra
+                    </p>
+                    <p>i make music!! follow my <a href="https://soundcloud.com/siennacell">soundcloud</a></p>
+                    <hr />
+                    <p style="text-align: center">
+                        <b>interestz</b>
+                    </p>
+                    <p>
+                        - anime<br />
+                        - making music<br />
+                        - websurfing ¬⩊¬<br />
+                        - drawing<br />
+                    </p>
+                    <hr />
+                    <p style="text-align: center">
+                        <span class="red">NEW!!!</span>
+                    </p>
+
+                    <p style="text-align: center">you can send me messages noww!!!</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="tagline.js"></script>
+        <script src="email.js"></script>
+    </body>
+</html>
