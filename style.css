@@ -35,14 +35,14 @@
 
 @font-face {
     font-family: "8BitOperator Faithful";
-    src: url("/fonts/8BitOperator Faithfuloperator-faithful.ttf") format("truetype");
+    src: url("/fonts/8bitoperator-faithful.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "8BitOperator Faithful Light";
-    src: url("/fonts/8BitOperator Faithfuloperator-faithful-light.ttf") format("truetype");
+    src: url("/fonts/8bitoperator-faithful-light.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -162,10 +162,9 @@ ul {
 }
 
 .sitemenu {
-    position: sticky;
-    top: 10px;
-    z-index: 1000;
+    position: relative;
     display: flex;
+    z-index: 1000;
     justify-content: center;
     gap: 20px;
     margin: 0 auto 20px;
