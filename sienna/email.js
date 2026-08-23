@@ -19,6 +19,6 @@ form.addEventListener("submit", function (e) {
         }
     );
 
-    sent.textContent = "your message was sent!";
+    sent.textContent = "sent! i will try 2 reply asap :3";
     form.reset();
 });

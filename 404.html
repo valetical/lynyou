@@ -1,50 +1,46 @@
 <html lang="en">
     <head>
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-        <meta charset="utf-8" />
         <meta content="width=device-width" name="viewport" />
-        <meta content="#000000" name="theme-color" />
         <meta content="noindex" name="robots" />
-        <title>.</title>
+        <title>nothing here</title>
+        <style>
+            body,
+            html {
+                background: white;
+                color: black;
+            }
+            #error {
+                font-family: "Comic Sans MS";
+                max-width: 400px;
+                padding: 1rem 2rem;
+                font-size: 12px;
+            }
+            h1 {
+                font-weight: 500;
+                font-size: 36px;
+            }
+            h1 img {
+                vertical-align: middle;
+                margin-right: 0.4rem;
+            }
+        </style>
     </head>
     <body>
         <main>
             <div id="error">
-                <h1><img src="images/432968wwi0anufp3.gif" width="150" /> nothing here</h1>
-                <a href="https://lynyou.com" class="back">← home</a>
+                <h1>
+                    <img
+                        src="images/432968wwi0anufp3.gif"
+                        width="150"
+                        onclick="document.getElementById('audio').currentTime = 0; 
+                                 document.getElementById('audio').play()"
+                        style="cursor: pointer" />
+                    nothing here
+                </h1>
+                <a href="https://lynyou.com">← home</a>
+                <audio id="audio" src="sneaky.mp3"></audio>
             </div>
-            <style>
-                body,
-                html {
-                    background: white;
-                    color: black;
-                }
-                #error {
-                    font-family: "Comic Sans MS";
-                    max-width: 400px;
-                    padding: 1rem 2rem;
-                    font-size: 12px;
-                }
-                h1 {
-                    font-weight: 500;
-                    font-size: 36px;
-                }
-                h1 img {
-                    vertical-align: middle;
-                    margin-right: 0.4rem;
-                }
-                hr {
-                    color: #dddddd;
-                    margin-top: 1rem;
-                    margin-bottom: 1.25rem;
-                }
-
-                .back {
-                    color: #8a8a8a;
-                    font-style: italic;
-                    font-size: 28;
-                }
-            </style>
         </main>
     </body>
 </html>

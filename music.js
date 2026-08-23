@@ -1,16 +1,15 @@
+// i stole this from someones neocities website i dont remember who im sorry
+
 // music player scripts
 // initiate variables
 let track_name = document.querySelector(".songtitle");
 let track_link = document.getElementById("track-link");
-
 let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
 let prev_btn = document.querySelector(".prev-track");
-
 let seek_slider = document.querySelector(".seek_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
-
 let track_index = 0;
 let isPlaying = false;
 let updateTimer;
