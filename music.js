@@ -15,6 +15,10 @@ let track_index = 0;
 let isPlaying = false;
 let updateTimer;
 
+function togglePlayer() {
+	document.getElementById("musicplayer").classList.toggle("open");
+}
+
 // create new audio element
 let curr_track = document.getElementById("music");
 let track_list = [
@@ -91,7 +95,35 @@ function loadTrack(track_index) {
 	// update details of the track
 	//track_name.textContent =
 	//	"Song " + (track_index + 1) + "/" + track_list.length + ": " + track_list[track_index].name;
-	track_name.innerHTML = '<span class="music-note">♪</span> ' + track_list[track_index].name;
+	track_name.innerHTML =
+		'<span class="title-text"><span class="music-note">♪</span> ' + track_list[track_index].name + "</span>";
+
+	const titleText = track_name.querySelector(".title-text");
+
+	const availableWidth =
+		track_name.clientWidth -
+		parseFloat(getComputedStyle(track_name).paddingLeft) -
+		parseFloat(getComputedStyle(track_name).paddingRight);
+
+	const textWidth = titleText.scrollWidth;
+	const distance = textWidth - availableWidth;
+
+	if (distance > 0) {
+		track_name.classList.add("scrolling");
+
+		const duration = Math.max(3, distance / 50);
+
+		track_name.style.setProperty("--scroll-distance", `${distance}px`);
+		track_name.style.setProperty("--scroll-duration", `${duration}s`);
+	} else {
+		track_name.classList.remove("scrolling");
+	}
+
+	if (track_name.scrollWidth > track_name.clientWidth) {
+		track_name.classList.add("scrolling");
+	} else {
+		track_name.classList.remove("scrolling");
+	}
 	track_link.href = track_list[track_index].dl;
 
 	// set an interval of 1000 milliseconds for updating the seek slider

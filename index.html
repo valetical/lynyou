@@ -28,14 +28,82 @@ active since 5/12/26
 -->
     <style>
       body::before {
-        background: url("../images/Texture_other_060.gif");
         background-repeat: repeat;
-
-        opacity: 0.4;
+        opacity:;
       }
 
       body {
         background: #000;
+      }
+
+      .email {
+        color: #444;
+      }
+
+      .projects section:first-child {
+        text-align: left;
+      }
+
+      .projects section:last-child {
+        text-align: right;
+      }
+
+      .sc,
+      .ig,
+      .apl,
+      .spt,
+      .yt,
+      .tik,
+      .tok,
+      .twt,
+      .bc,
+      .ph,
+      .email,
+      .discord {
+        text-transform: lowercase;
+        font-family: "Tension Points";
+        line-height: 1;
+      }
+
+      .dc {
+        font-family: ralsei;
+      }
+
+      .email2 {
+        font-size: 22px;
+        color: #838383;
+      }
+
+      .discord {
+        color: #7289da;
+      }
+
+      .shortinfo {
+        font-family: mewmew;
+        color: #777;
+        font-size: 16px;
+        text-align: right;
+      }
+
+      #dcdot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-left: 2px;
+        border-radius: 50%;
+        background: #777;
+      }
+
+      #dcdot.online {
+        background: #23a55a;
+      }
+
+      #dcdot.idle {
+        background: #f0b232;
+      }
+
+      #dcdot.dnd {
+        background: #f23f42;
       }
     </style>
   </head>
@@ -52,46 +120,53 @@ active since 5/12/26
         <img src="images/lynmicro.png" class="whitetext" />
       </div>
 
-      <div class="soft3">they/them, 17 years old</div>
-      <a href="https://lynyou.com/archive" class="archive-link">other projects / archive →</a>
+      <div class="shortinfo">they/them 17 years old</div>
+      <!--<a href="/archive" class="archive-link">other projects / archive →</a>-->
 
       <!--Music player-->
-      <div id="musicplayer" style="margin-bottom: 10px; margin-right: 0.5%">
-        <!--<div><marquee scrollamount="8" class="songtitle"></marquee></div>-->
-        <div class="songtitle"></div>
-        <table class="controls">
-          <tr>
-            <td>
-              <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
-            </td>
-            <td>
-              <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-play"></i></div>
-            </td>
-            <td>
-              <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
-            </td>
-            <td>
-              <a id="track-link" href="#" target="_blank">
-                <i class="fas fa-link"></i>
-              </a>
-            </td>
-          </tr>
-        </table>
-        <div class="seeking">
-          <div class="current-time">00:00</div>
-          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
-          <div class="total-duration">0:00</div>
-        </div>
-        <audio id="music" src=""></audio>
-      </div>
+      <div id="musicplayer">
+        <button id="player-toggle" onclick="togglePlayer()">
+          <img src="images/cd_audio_cd_a-4.png" alt="Music" />
+        </button>
 
+        <div id="player-panel">
+          <div class="songtitle"></div>
+          <table class="controls">
+            <tr>
+              <td>
+                <div class="prev-track" onclick="prevTrack()">
+                  <i class="fas fa-backward"></i>
+                </div>
+              </td>
+              <td>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                  <i class="fas fa-play"></i>
+                </div>
+              </td>
+              <td>
+                <div class="next-track" onclick="nextTrack()">
+                  <i class="fas fa-forward"></i>
+                </div>
+              </td>
+              <td>
+                <a id="track-link" href="#" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </td>
+            </tr>
+          </table>
+          <div class="seeking">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
+            <div class="total-duration">0:00</div>
+          </div>
+          <audio id="music" src=""></audio>
+        </div>
+      </div>
       <script type="text/javascript" src="music.js"></script>
 
       <div class="projects">
         <section>
-          <div class="label" style="margin-bottom: 0.8rem">* lynU</div>
-          <!--    <div class="nameold">aka 14106lyn, lynion, valetical, c4pri</div> -->
-
           <ul>
             <li>
               <a href="https://soundcloud.com/lynyou"><span class="sc">SoundCloud</span></a>
@@ -106,94 +181,51 @@ active since 5/12/26
               <a href="https://open.spotify.com/artist/2STKH6v7x4yEzQqToCsapM"><span class="spt">Spotify</span></a>
             </li>
             <li>
+              <a href="https://lynu.bandcamp.com">
+                <span class="bc">Bandcamp</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>
               <a href="https://youtube.com/@lynyouu"><span class="yt">YouTube</span></a>
             </li>
             <li>
               <a href="https://tiktok.com/@lynyouu1"> <span class="tik">Tik</span><span class="tok">Tok</span> </a>
             </li>
-          </ul>
-        </section>
-        <!--
-        <section>
-          <div class="label" style="margin-bottom: 0.8rem">* red letter diary</div>
-
-          <ul>
             <li>
-              <a href="https://soundcloud.com/redletterdiary"><span class="sc">SoundCloud</span></a>
+              <a href="https://twitter.com/lynyouu">
+                <span class="twt">Twitter</span>
+              </a>
             </li>
             <li>
-              <a href="https://instagram.com/redletterdiary"><span class="ig">Instagram</span></a>
-            </li>
-            <li>
-              <a href="https://music.apple.com/us/artist/red-letter-diary/1811783669"
-                ><span class="apl">Apple Music</span></a
-              >
-            </li>
-            <li>
-              <a href="https://open.spotify.com/artist/2YWYSbsOOwBcDgwVK1DDI0"><span class="spt">Spotify</span></a>
+              <a href="https://store.lynyou.com">
+                <span class="ph">Store</span>
+              </a>
+              <!--<span class="smallthing"> - FLPs, vocal presets</span>-->
             </li>
           </ul>
         </section>
-  -->
       </div>
-
       <section>
         <ul>
           <li>
-            <a href="https://twitter.com/lynyouu">
-              <span class="twt">Twitter</span>
-            </a>
-            <!--<span class="soft"> - don't really post much about music</span>-->
-          </li>
-
-          <li>
-            <a href="https://lynu.bandcamp.com">
-              <span class="bc">Bandcamp</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://store.lynyou.com"><span class="ph">Store</span></a>
-            <span class="smallthing"> - FLPs, vocal presets</span>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <ul>
-          <li>
-            <span style="color: #444">Email:</span>
+            <span class="email">Email:</span>
             <a href="mailto:14106lyn@gmail.com">
-              <span style="text-decoration: underline"> 14106lyn@gmail.com </span>
+              <span class="email2"> 14106lyn@gmail.com </span>
             </a>
           </li>
           <li>
-            <span style="color: #7289da">Discord:</span>
-            <a class="dc">lynyou</a>
+            <span class="discord">Discord:</span>
+            <a href="#" class="email2" onclick="copydc(event, this)">lynyou</a>
+            <span id="dcdot"></span>
           </li>
         </ul>
       </section>
     </div>
-
-    <div class="releasebox">
-      <table class="music-table">
-        <thead>
-          <tr>
-            <th>cover</th>
-            <th>release</th>
-            <th>release date</th>
-            <th>type</th>
-            <th>runtime</th>
-            <th>platforms</th>
-            <th>rating</th>
-          </tr>
-        </thead>
-        <tbody id="release-list"></tbody>
-      </table>
-    </div>
-
-    <script src="scripts/releaseslynu.js"></script>
-    <script src="scripts/releaserender.js"></script>
 
     <div class="year">
       <span>© <span id="year"></span> lynU</span>
@@ -201,6 +233,23 @@ active since 5/12/26
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      function copydc(event, el) {
+        event.preventDefault();
+        var text = el.textContent;
+        var input = document.createElement("input");
+        input.value = text;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        input.remove();
+        el.textContent = "copied!";
+        setTimeout(function () {
+          el.textContent = text;
+        }, 1200);
+      }
     </script>
+    <script src="scripts/discord.js"></script>
+    <script src="scripts/menu.js"></script>
   </body>
 </html>

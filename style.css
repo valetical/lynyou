@@ -12,6 +12,61 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "rm";
+    src: url("/fonts/rm-basic-serif.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "mewmew";
+    src: url("/fonts/mad-mew-mew.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ralsei";
+    src: url("/fonts/ralsei.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "8BitOperator Faithful";
+    src: url("/fonts/8bitoperator-faithful.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "8BitOperator Faithful Light";
+    src: url("/fonts/8bitoperator-faithful-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Delta Sans";
+    src: url("/fonts/delta-sans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Tension Points";
+    src: url("/fonts/tension-points.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "tgohad";
+    src: url("/fonts/the-garden-of-hopes-and-dreams.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -106,6 +161,35 @@ ul {
     gap: 0.35rem;
 }
 
+.sitemenu {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto 20px;
+    padding: 8px 12px;
+    width: fit-content;
+    /*
+    background: #000;
+    border: 3px solid #333;
+    */
+    background: rgba(0, 0, 0, 0.15);
+    border-bottom: dashed;
+    border-bottom-color: #727272;
+    font-size: 16px;
+}
+
+.sitemenu a {
+    color: #cbcbcb;
+    font-family: "Delta Sans";
+}
+
+.sitemenu a:hover {
+    color: #fff;
+}
+
 .name {
     color: #fff;
     font-size: 26px;
@@ -156,7 +240,6 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    margin-top: 2rem;
 }
 
 @media (max-width: 700px) {
@@ -169,51 +252,116 @@ ul {
 #musicplayer {
     position: fixed;
     right: 20px;
-    top: 20px;
-    background: black;
-    border: 2px solid rgba(87, 23, 118, 0.84);
-    width: fit-content;
-    min-width: 300px;
-    z-index: 999;
+    bottom: 20px;
+    z-index: 9999;
+    font-family: "Reddit Mono", monospace;
 }
+
+#player-toggle {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player-toggle img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    image-rendering: pixelated;
+}
+
+#player-toggle:hover {
+    background: #acacac;
+}
+
+#player-panel {
+    position: absolute;
+    right: 0;
+    bottom: 55px;
+    width: 300px;
+    background: #000;
+    border: 2px solid rgba(87, 23, 118, 0.84);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition:
+        opacity 0.15s ease,
+        transform 0.15s ease,
+        visibility 0.15s;
+}
+
+#musicplayer.open #player-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .songtitle {
     display: block;
     white-space: nowrap;
-    text-align: center;
-    padding: 3px;
-    border-bottom: 2px solid rgba(87, 23, 118, 0.84); /* border under song title */
+    overflow: hidden;
+    text-align: left;
+    padding: 6px;
+    border-bottom: 2px solid rgba(87, 23, 118, 0.84);
+    font-family: "tgohad";
 }
-.songtitle2 {
-    padding: 5px; /* padding around song title */
-    border-bottom: 2px solid rgba(87, 23, 118, 0.84); /* border under song title */
-    display: block;
+
+.title-text {
+    display: inline-block;
+    white-space: nowrap;
 }
+
+.songtitle.scrolling .title-text {
+    animation: songscroll var(--scroll-duration) linear infinite alternate;
+}
+
+@keyframes songscroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-1 * var(--scroll-distance)));
+    }
+}
+
 .controls {
-    font-size: 20px !important; /* size of controls */
-    background-color: black; /* background color of controls */
+    font-size: 18px !important;
+    background: #000;
     text-align: center;
     width: 100%;
 }
+
 .controls td {
-    padding: 8px 5px 5px;
+    padding: 8px 10px;
 }
 
-.music-note {
-    font-family: "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
-}
-
-/* padding around controls */
 .seeking {
-    background-color: #000000; /* background color of seeking bar */
+    background: #000;
     display: flex;
-    justify-content: space-evenly;
-    padding: 5px; /* padding around seeking bar */
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
 }
-.current-time {
-    padding-right: 5px;
-}
+
+.current-time,
 .total-duration {
-    padding-left: 5px;
+    font-size: 14px;
+    color: #a8a8a8;
+    white-space: nowrap;
+}
+
+.current-time {
+    padding-right: 0;
+}
+
+.total-duration {
+    padding-left: 0;
+}
+
+input[type="range"] {
+    flex: 1;
 }
 
 i.fas:hover {
@@ -282,7 +430,7 @@ input[type="range"]::-moz-range-thumb {
     color: rgba(255, 0, 71, 0.86);
 }
 .sc {
-    color: #e48016;
+    color: #ed9a42;
 }
 .twt {
     color: #4abcff;
@@ -359,7 +507,7 @@ section:hover {
 .smallthing {
     color: #fff;
     font-size: 20px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .box {
@@ -439,21 +587,11 @@ section:hover {
     border-collapse: collapse;
 }
 
-.music-table {
-    width: max-content;
-    border-collapse: collapse;
-}
-
-.music-table {
-    width: max-content;
-    min-width: 1100px;
-    border-collapse: collapse;
-}
-
 .music-table th {
     text-align: left;
     color: #555;
     font-weight: normal;
+    font-size: 16px;
     padding: 5px;
 }
 
@@ -464,18 +602,25 @@ section:hover {
     white-space: nowrap;
 }
 
+.releaseplatform {
+    font-size: 16px;
+}
+
+.releaseplatform.flp {
+    color: #ade0ff;
+}
+
 .cover {
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     object-fit: cover;
     display: block;
 }
 
 .credits {
     color: #555;
-
-    font-size: 14px;
-    margin-top: 4px;
+    font-size: 12px;
+    margin-top: 3px;
 }
 
 .date,
@@ -483,7 +628,7 @@ section:hover {
 .runtime {
     color: #666;
     white-space: nowrap;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .rating {
@@ -519,5 +664,6 @@ details summary::marker {
 
 .releasetitle {
     color: #fff;
-    font-weight: 800;
+    font-weight: 300;
+    font-size: 18px;
 }
