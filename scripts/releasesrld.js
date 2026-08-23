@@ -201,7 +201,7 @@ const releases = [
       ["Arise", "1:41"]
     ]
   },
-
+/*
   {
     title: "as far as i know",
     cover: "https://i1.sndcdn.com/artworks-URQu0ZnF4ezVUkke-wUEl5w-t500x500.jpg",
@@ -212,7 +212,7 @@ const releases = [
     rating: 0,
     credits: ["lynU - production, vocals"]
   },
-
+*/
   {
     title: "bittersweet",
     cover: "https://i1.sndcdn.com/artworks-1LCOoPzGYQApJ01x-znX87Q-t500x500.jpg",
