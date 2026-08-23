@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>☆ LYN*YOU ☆</title>
+
+        <style>
+            body::before {
+                content: "";
+                position: fixed;
+                inset: 0;
+                background: url("../images/13.gif");
+                background-repeat: repeat;
+                opacity: 0.3;
+                pointer-events: none;
+                z-index: -1;
+            }
+
+            body {
+                background: #000;
+                color: #222;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 14px;
+            }
+
+            a {
+                color: #0000cc;
+            }
+
+            .quiz {
+                width: 700px;
+                margin: 30px auto;
+                padding: 20px;
+                background: white;
+                border: 2px outset #eee;
+            }
+
+            h1 {
+                text-align: center;
+                color: #0900ff;
+            }
+
+            .screen {
+                text-align: center;
+            }
+
+            .question {
+                background: #ffffcc;
+                border: 1px solid #999;
+                padding: 12px;
+                margin-bottom: 15px;
+            }
+
+            .answers {
+                text-align: left;
+            }
+
+            .answer {
+                display: block;
+                padding: 8px;
+                margin: 6px 0;
+                background: white;
+                border: 1px solid #aaa;
+                cursor: pointer;
+            }
+            .answer:hover {
+                background: #eeeeff;
+            }
+            button {
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                cursor: pointer;
+            }
+            #feedback {
+                margin: 15px 0;
+                padding: 10px;
+                border: 1px solid #999;
+                background: #eee;
+            }
+            #next {
+                display: none;
+            }
+            #quiz-screen,
+            #results {
+                display: none;
+            }
+            #name {
+                padding: 5px;
+                width: 180px;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 14px;
+                border: 1px solid #999;
+            }
+            #submit-score {
+                margin-left: 5px;
+            }
+            #submitted {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="quiz">
+            <div id="start-screen" class="screen">
+                <h1>☆ LYN*YOU ☆</h1>
+                <p>~ welcome 2 my Awesome MusiC Quiz ~</p>
+                <p>10Questions. how much do you really know?</p>
+                <!--<button onclick="startQuiz()">START QUIZ</button>-->
+                <button onclick="startQuiz()" style="border: 0; padding: 0; background: none">
+                    <img src="takequiz.gif" alt="START QUIZ" />
+                </button>
+            </div>
+
+            <div id="quiz-screen">
+                <p id="progress"></p>
+                <div class="question">
+                    <b id="question"></b>
+                </div>
+                <div id="answers" class="answers"></div>
+                <div id="feedback"></div>
+                <button id="submit" onclick="checkAnswer()">SUBMIT</button>
+                <button id="next" onclick="nextQuestion()">NEXT QUESTION</button>
+            </div>
+
+            <div id="results" class="screen">
+                <h1>☆ QUIZ COMPLETE ☆</h1>
+                <p id="score"></p>
+                <p id="final-message"></p>
+                <p>enter ur name to submit ur score:</p>
+                <input type="text" id="name" placeholder="ur name" maxlength="50" />
+                <button id="submit-score" onclick="submitScore()">SUBMIT SCORE</button>
+                <p id="submitted"></p>
+                <button onclick="startQuiz()">TAKE IT AGAIN</button>
+            </div>
+        </div>
+
+        <script src="qa.js"></script>
+        <script src="yeah.js"></script>
+    </body>
+</html>
