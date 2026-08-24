@@ -211,7 +211,7 @@ const releases = [
     title: "ALL TOMORROWS",
     cover: "https://i1.sndcdn.com/artworks-84WVH5huvKE4IpUa-S84A9Q-t500x500.png",
     date: "12/19/25",
-    type: "remix",
+    type: "collab",
     runtime: "3:14",
     platforms: ["sc"],
     rating: 1,
