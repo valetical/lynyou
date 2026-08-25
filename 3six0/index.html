@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>3six0</title>
+        <link rel="icon" type="image/png" href="360_2.png" />
+
+        <style>
+            body::before {
+                content: "";
+                position: fixed;
+                width: 500px;
+                height: 500px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url("drtynsrtynsrty.png");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0.2;
+                z-index: -1;
+            }
+
+            body {
+                background: black;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-family: Tahoma, sans-serif;
+                justify-content: center;
+                min-height: 100dvh;
+                box-sizing: border-box;
+            }
+
+            .title {
+                font-size: 50px;
+            }
+
+            .c1 {
+                color: #ff0000;
+            }
+            .c2 {
+                color: #fac105;
+            }
+            .c3 {
+                color: #ff6b21;
+            }
+            .c4 {
+                color: #00b9f8;
+            }
+            .c5 {
+                color: #02e8fc;
+            }
+            .c6 {
+                color: #01cbae;
+            }
+            .c7 {
+                color: #36ffac;
+            }
+            .c8 {
+                color: #99fe00;
+            }
+            .c9 {
+                color: #99fe00;
+            }
+            .c10 {
+                color: #fff;
+            }
+
+            .tracklist {
+                max-width: 420px;
+                line-height: 1.3;
+            }
+
+            .tracks {
+            }
+
+            .track {
+                font-size: 14px;
+                padding: 2px;
+            }
+
+            .tracknumber {
+                font-weight: 700;
+                padding-right: 5px;
+                color: #ffffff;
+            }
+
+            .artists {
+                padding-left: 10px;
+                align-content: center;
+                font-size: 12px;
+                color: #c8c8c8;
+            }
+
+            .prod {
+                padding-left: 10px;
+                align-content: center;
+                font-size: 12px;
+                color: #949494;
+                font-style: italic;
+            }
+
+            .artists a {
+                color: #c8c8c8;
+                text-decoration: none;
+            }
+
+            .prod a {
+                color: #949494;
+                text-decoration: none;
+            }
+
+            .artists a:hover,
+            .prod a:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+            .tracktitle {
+            }
+
+            .logo img {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+
+            .bonus {
+                margin-top: 20px;
+            }
+
+            .albuminfo {
+                font-size: 12px;
+                color: #737373;
+                font-style: italic;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .links {
+                margin-top: 30px;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .links a {
+                text-decoration: none;
+                margin: 0 8px;
+            }
+
+            .sc {
+                color: #ed9a42;
+            }
+            .twt {
+                color: #4abcff;
+            }
+            .spt {
+                color: #03d84f;
+            }
+
+            .links a:hover {
+                color: #fff;
+            }
+
+            .year {
+                margin-top: 2rem;
+                color: #fff;
+                font-size: 12px;
+                opacity: 0.2;
+                text-align: center;
+            }
+
+            .date {
+                display: inline-block;
+                width: 62px;
+                padding-right: 5px;
+                font-size: 12px;
+                color: #a8a8a8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="3six0spin.gif" alt="3six0" />
+        </div>
+        <!--
+        <div class="title">3six0</div>
+-->
+
+        <div class="albuminfo">
+            <span>2024-2025</span>
+        </div>
+
+        <div class="tracklist" id="tracklist">
+            <div class="track">
+                <span class="date">2024.06.21</span>
+                <span class="tracktitle">lifeline</span>
+                <span class="artists">ft. lynU, isai</span>
+                <span class="prod">prod. lynU</span>
+            </div>
+            <div class="track">
+                <span class="date">2024.07.06</span>
+                <span class="tracktitle">too much</span>
+                <span class="artists">ft. lynU, Alyx Trick, crusafix</span>
+                <span class="prod">prod. lynU, isai</span>
+            </div>
+            <div class="track">
+                <span class="date">2024.11.30</span>
+                <span class="tracktitle">forever</span>
+                <span class="artists">ft. lynU, crusafix</span>
+                <span class="prod">prod. lynU</span>
+            </div>
+            <div class="track">
+                <span class="date">2025.03.10</span>
+                <span class="tracktitle">10</span>
+                <span class="artists">ft. lynU, Alyx Trick, deepinparis</span>
+                <span class="prod">prod. lynU</span>
+            </div>
+            <div class="links">
+                <a class="sc" href="https://soundcloud.com/3six03six03six0">soundcloud</a>
+                <a class="spt" href="https://open.spotify.com/artist/5APK55HaYPWbmQQOFSA54F">spotify</a>
+            </div>
+        </div>
+
+        <div class="year">
+            <span>© <span id="year"></span> 3six0</span>
+        </div>
+
+        <script src="/scripts/year.js"></script>
+
+        <script>
+            const links = {
+                lynU: "https://lynyou.com",
+                "Alyx Trick": "https://alyxtrick.com",
+                crusafix: "https://soundcloud.com/1crusafix",
+                deepinparis: "https://soundcloud.com/deepinparis",
+                isai: "https://soundcloud.com/omgisai"
+            };
+
+            document.querySelectorAll(".artists").forEach((element) => {
+                for (const [name, url] of Object.entries(links)) {
+                    element.innerHTML = element.innerHTML.replaceAll(name, `<a href="${url}">${name}</a>`);
+                }
+            });
+            document.querySelectorAll(".prod").forEach((element) => {
+                for (const [name, url] of Object.entries(links)) {
+                    element.innerHTML = element.innerHTML.replaceAll(name, `<a href="${url}">${name}</a>`);
+                }
+            });
+        </script>
+    </body>
+</html>

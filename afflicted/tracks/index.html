@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>afflicted</title>
+        <link rel="icon" type="image/png" href="afflicted_icon_invert.png" />
+
+        <style>
+            body::before {
+                content: "";
+                position: fixed;
+                width: 700px;
+                height: 700px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url("afflicted1.jpg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0.2;
+                z-index: -1;
+            }
+
+            body {
+                background: black;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-family: Tahoma, sans-serif;
+                justify-content: center;
+                min-height: 100dvh;
+                box-sizing: border-box;
+            }
+
+            .title {
+                font-size: 50px;
+            }
+
+            .c1 {
+                color: #ff0000;
+            }
+            .c2 {
+                color: #fac105;
+            }
+            .c3 {
+                color: #ff6b21;
+            }
+            .c4 {
+                color: #00b9f8;
+            }
+            .c5 {
+                color: #02e8fc;
+            }
+            .c6 {
+                color: #01cbae;
+            }
+            .c7 {
+                color: #36ffac;
+            }
+            .c8 {
+                color: #99fe00;
+            }
+            .c9 {
+                color: #99fe00;
+            }
+            .c10 {
+                color: #fff;
+            }
+
+            .tracklist {
+                max-width: 500px;
+                line-height: 1.3;
+            }
+
+            .tracks {
+            }
+
+            .track {
+                font-size: 14px;
+                padding: 2px;
+            }
+
+            .tracknumber {
+                font-weight: 700;
+                padding-right: 5px;
+                color: #ffffff;
+            }
+
+            .artists {
+                padding-left: 10px;
+                align-content: center;
+                font-size: 12px;
+                color: #c8c8c8;
+            }
+
+            .prod {
+                padding-left: 10px;
+                align-content: center;
+                font-size: 12px;
+                color: #949494;
+                font-style: italic;
+            }
+
+            .artists a {
+                color: #c8c8c8;
+                text-decoration: none;
+            }
+
+            .prod a {
+                color: #949494;
+                text-decoration: none;
+            }
+
+            .artists a:hover,
+            .prod a:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+            .tracktitle {
+            }
+
+            .logo img {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+
+            .bonus {
+                margin-top: 20px;
+            }
+
+            .albuminfo {
+                font-size: 12px;
+                color: #737373;
+                font-style: italic;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .links {
+                margin-top: 30px;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .links a {
+                text-decoration: none;
+                margin: 0 8px;
+            }
+
+            .sc {
+                color: #ed9a42;
+            }
+            .twt {
+                color: #4abcff;
+            }
+            .spt {
+                color: #03d84f;
+            }
+
+            .links a:hover {
+                color: #fff;
+            }
+
+            .year {
+                margin-top: 2rem;
+                color: #fff;
+                font-size: 12px;
+                opacity: 0.2;
+                text-align: center;
+            }
+
+            .date {
+                display: inline-block;
+                width: 62px;
+                padding-right: 5px;
+                font-size: 12px;
+                color: #a8a8a8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <a href="../afflicted">
+                <img src="AFFLICTEDSPIN.gif" alt="afflictedlogo" />
+            </a>
+        </div>
+
+        <div class="title">
+            <span class="c1">a</span><span class="c2">f</span><span class="c3">f</span><span class="c4">l</span
+            ><span class="c5">i</span><span class="c6">c</span><span class="c7">t</span><span class="c8">e</span
+            ><span class="c9">d</span><span class="c10">1</span>
+        </div>
+
+        <div class="albuminfo">
+            <span>10 track compilation of singles from 2022 + 2023</span><br />
+            <span>24 minutes 44 seconds</span>
+        </div>
+
+        <div class="tracklist" id="tracklist">
+            <div class="track">
+                <span class="date">2023.05.29</span>
+                <span class="tracknumber">1.</span>
+                <span class="tracktitle">packedd</span>
+                <span class="artists">ft. Alyx Trick, lynU, crusafix, isai</span>
+                <span class="prod">prod. erdo</span>
+            </div>
+            <div class="track">
+                <span class="date">2022.12.30</span>
+                <span class="tracknumber">2.</span>
+                <span class="tracktitle">fake</span>
+                <span class="artists">ft. girlsynth, crusey, crusafix, dime</span>
+                <span class="prod">prod. breakupbreakdown</span>
+            </div>
+            <div class="track">
+                <span class="date">2023.02.22</span>
+                <span class="tracknumber">3.</span>
+                <span class="tracktitle">deadeye</span>
+                <span class="artists">ft. crusafix, lynU, isai</span>
+                <span class="prod">prod. erdo</span>
+            </div>
+            <div class="track">
+                <span class="date">2023.01.13</span>
+                <span class="tracknumber">4.</span>
+                <span class="tracktitle">ghostt</span>
+                <span class="artists">ft. crusafix, tera, akkiro</span>
+                <span class="prod">prod. mycorpsebride</span>
+            </div>
+            <div class="track">
+                <span class="date">2023.05.12</span>
+                <span class="tracknumber">5.</span>
+                <span class="tracktitle">seethru</span>
+                <span class="artists">ft. cld, crusey, akkiro, deepinparis, crusafix</span>
+                <span class="prod">prod. erdo, tera, yashio</span>
+            </div>
+            <div class="track">
+                <span class="date">2023.02.03</span>
+                <span class="tracknumber">6.</span>
+                <span class="tracktitle">watchlist</span>
+                <span class="artists">ft. crusey, deepinparis, akkiro</span>
+                <span class="prod">prod. mycorpsebride</span>
+            </div>
+            <div class="track">
+                <span class="date">2022.10.21</span>
+                <span class="tracknumber">7.</span>
+                <span class="tracktitle">tragic</span>
+                <span class="artists">ft. crusey, akkiro, crusafix</span>
+                <span class="prod">prod. breakupbreakdown</span>
+            </div>
+            <div class="track">
+                <span class="date">2023.04.05</span>
+                <span class="tracknumber">8.</span>
+                <span class="tracktitle">firstplace</span>
+                <span class="artists">ft. lynU, crusafix, akkiro</span>
+                <span class="prod">prod. mycorpsebride</span>
+            </div>
+            <div class="track">
+                <span class="date">2023.12.18</span>
+                <span class="tracknumber">9.</span>
+                <span class="tracktitle">vitals</span>
+                <span class="artists">ft. crusey, Alyx Trick, akkiro</span>
+                <span class="prod">prod. Alyx Trick</span>
+            </div>
+            <div class="track">
+                <span class="date">2022.12.19</span>
+                <span class="tracknumber">10.</span>
+                <span class="tracktitle">paramedics cypher</span>
+                <span class="artists"
+                    >ft. crusafix, Alyx Trick, crusey, w!ldflwr, deepinparis, mycorpsebride, breakupbreakdown, akkiro,
+                    prkr blu, lynU, erdo</span
+                >
+                <span class="prod">prod. erdo</span>
+
+                <div class="bonus">
+                    <div class="track">
+                        <span class="date">2024.11.08</span>
+                        <span class="tracknumber">extra</span>
+                        <span class="tracktitle">if you know...</span>
+                        <span class="artists">ft. Alyx Trick, lynU, crusafix, deepinparis, isai, crusey, akkiro</span>
+                        <span class="prod">prod. lynU</span>
+                    </div>
+
+                    <div class="links">
+                        <a class="sc" href="https://soundcloud.com/1afflicted/sets/afflicted1">soundcloud</a>
+                        <a class="spt" href="https://open.spotify.com/album/2216V33iMw71EB6xbzOYgY">spotify</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="year">
+            <span>© <span id="year"></span> afflicted</span>
+        </div>
+
+        <script src="/scripts/year.js"></script>
+
+        <script>
+            const links = {
+                lynU: "https://lynyou.com",
+                "Alyx Trick": "https://alyxtrick.com",
+                crusafix: "https://soundcloud.com/1crusafix",
+                isai: "https://soundcloud.com/omgisai",
+                crusey: "https://soundcloud.com/cruseyyyy",
+                akkiro: "https://soundcloud.com/7akkiro",
+                erdo: "https://soundcloud.com/erdo",
+                mycorpsebride: "https://soundcloud.com/orochimara",
+                deepinparis: "https://soundcloud.com/deepinparis",
+                breakupbreakdown: "https://soundcloud.com/breakupbreakdown",
+                "w!ldflwr": "https://soundcloud.com/ilovewldflwr",
+                girlsynth: "https://soundcloud.com/fruityeq",
+                dime: "https://soundcloud.com/proddime",
+                "prkr blu": "https://soundcloud.com/prkrblu",
+                tera: "https://soundcloud.com/1terastic"
+            };
+
+            document.querySelectorAll(".artists").forEach((element) => {
+                for (const [name, url] of Object.entries(links)) {
+                    element.innerHTML = element.innerHTML.replaceAll(name, `<a href="${url}">${name}</a>`);
+                }
+            });
+            document.querySelectorAll(".prod").forEach((element) => {
+                for (const [name, url] of Object.entries(links)) {
+                    element.innerHTML = element.innerHTML.replaceAll(name, `<a href="${url}">${name}</a>`);
+                }
+            });
+        </script>
+    </body>
+</html>

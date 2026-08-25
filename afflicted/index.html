@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title></title>
-        
-<!-- shoutout cheeto @ewcheeto -->
+
+        <!-- shoutout cheeto @ewcheeto -->
 
         <style>
             body {
@@ -20,13 +20,26 @@
                 width: 500px;
                 cursor: pointer;
             }
+
+            .linklogo {
+                position: fixed;
+                width: 100px;
+                right: 20px;
+                bottom: 20px;
+                cursor: pointer;
+                filter: invert(1);
+            }
         </style>
     </head>
-    
+
     <body>
         <img src="lol.png" id="lol" />
 
         <audio id="audio" src="IFYOUKNOWTHENYOUKNOW.mp3"></audio>
+
+        <a href="/afflicted/tracks/">
+            <img src="/afflicted/tracks/AFFLICTEDSPIN.gif" class="linklogo" alt="afflicted1" />
+        </a>
 
         <script>
             document.getElementById("lol").onclick = function () {
