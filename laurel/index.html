@@ -2,44 +2,175 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>luv</title>
+        <title>inspirational</title>
+
         <style>
             body {
-                background-color: black;
+                background: black;
                 margin: 0;
                 height: 100vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
                 overflow: hidden;
+                font-family: monospace;
             }
 
-            .play-button {
-                margin-top: 20px;
-                width: 30px;
-                height: 30px;
-                padding: 0;
-                border: 0px;
-                background: #000000;
-                color: white;
-                font-size: 36px;
+            .album {
+                position: absolute;
+                width: 180px;
                 cursor: pointer;
+            }
+
+            #info {
+                display: none;
+                color: white;
+                padding: 30px;
+                text-align: center;
+            }
+
+            #tracks {
+                white-space: pre-line;
+                line-height: 1.5;
+                text-align: center;
+            }
+
+            .laurel {
+                position: fixed;
+                bottom: 15px;
+                right: 15px;
+                color: white;
+                cursor: pointer;
+            }
+
+            #cover {
+                width: 300px;
+                max-width: 80%;
+            }
+
+            #date,
+            #runtime {
+                color: #838383;
+                margin: 5px;
+            }
+
+            #streaming {
+                margin: 20px;
+            }
+
+            #description {
+                white-space: pre-line;
+                opacity: 0.5;
+            }
+
+            .link {
+                position: absolute;
+                color: white;
+                text-decoration: none;
+            }
+
+            .link:hover {
+                opacity: 0.5;
+            }
+
+            .sc {
+                left: 20%;
+                top: 20%;
+                color: #ed9a42;
+            }
+
+            .spt {
+                left: 70%;
+                top: 30%;
+                color: #03d84f;
+            }
+
+            .apl {
+                left: 40%;
+                top: 75%;
+                color: #ff627c;
+            }
+
+            .bc {
+                color: #629aa9;
+            }
+
+            #streaming .sc,
+            #streaming .spt,
+            #streaming .apl,
+            #streaming .bc {
+                position: static;
+                margin: 0 8px;
+                text-decoration: none;
+            }
+
+            #streaming a:hover {
+                opacity: 0.6;
+            }
+
+            #credits {
+                color: #838383;
+                opacity: 1;
+                white-space: pre-line;
+            }
+
+            #credits a {
+                color: #d2d2d2;
+                text-decoration: none;
+            }
+
+            #credits a:hover {
+                opacity: 0.6;
+            }
+
+            .back a {
+                color: #b1b1b1;
+                text-decoration: none;
+            }
+
+            .yanny {
+                position: absolute;
+                width: 300px;
             }
         </style>
     </head>
+
     <body>
-        <img src="Spinning_Dancer.gif" />
-        <script>
-            var music = new Audio();
-            function playMusic() {
-                var songs = ["luvedit.mp3", "luvedit2.mp3"];
-                var randomSong = songs[Math.floor(Math.random() * songs.length)];
-                music.src = randomSong;
-                music.currentTime = 0;
-                music.play();
-            }
-        </script>
-        <button class="play-button" onclick="playMusic()">▶</button>
+        <div id="home">
+            <img class="album" src="dress.webp" data-release="0" />
+            <img class="album" src="swing.gif" data-release="1" />
+            <img class="album" src="spin.gif" data-release="2" />
+            <img class="album" src="complexnumbers.jpg" data-release="3" />
+            <a href="https://soundcloud.com/yanny-448088463">
+                <img class="yanny" src="purp.png" />
+            </a>
+        </div>
+
+        <div id="links">
+            <a class="link sc" href="https://soundcloud.com/laurel-572942456" target="_blank">soundcloud</a>
+            <a class="link spt" href="https://open.spotify.com/artist/1eGKEKKEYhhSiYKTU6g43A" target="_blank">
+                spotify
+            </a>
+            <a class="link apl" href="https://music.apple.com/us/artist/laurel/1766167119" target="_blank">
+                apple music
+            </a>
+        </div>
+
+        <div id="info">
+            <img id="cover" />
+            <h1 id="title"></h1>
+            <p id="date"></p>
+            <p id="runtime"></p>
+            <p id="description"></p>
+            <h3 id="tracklisttitle">tracklist</h3>
+            <p id="tracks"></p>
+            <h3>credits</h3>
+            <p id="credits"></p>
+            <div id="streaming"></div>
+
+            <span class="back"><a href="#" onclick="gohome()">back</a></span>
+        </div>
+
+        <div class="laurel" onclick="playMusic()">© <span id="year"></span> laurel</div>
+
+        <script src="/scripts/year.js"></script>
+        <script src="/scripts/laurel.js"></script>
     </body>
 </html>

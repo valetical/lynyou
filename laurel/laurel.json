@@ -1,0 +1,188 @@
+[
+    {
+        "card": {
+            "name": "yannycore",
+            "type": "album",
+            "date": "released May 26, 2024",
+            "runtime": "14 minutes 51 seconds",
+            "cover": "https://i1.sndcdn.com/artworks-i0sTHXyZVS0t4tKC-Wly1Ww-t1080x1080.jpg",
+            "tracklist": [
+                {
+                    "title": "bicky robby"
+                },
+                {
+                    "title": "more or less"
+                },
+                {
+                    "title": "i gotta stop"
+                },
+                {
+                    "title": "headlock"
+                },
+                {
+                    "title": "pay the cost"
+                },
+                {
+                    "title": "found another one"
+                },
+                {
+                    "title": "i got YOU on my mind"
+                },
+                {
+                    "title": "then i saw it"
+                }
+            ],
+            "streaming": [
+                {
+                    "label": "soundcloud",
+                    "url": "https://soundcloud.com/laurel-572942456/sets/yannycore"
+                },
+                {
+                    "label": "spotify",
+                    "url": "https://open.spotify.com/album/7bgAsoKgfT8byuuei1PqPu"
+                },
+                {
+                    "label": "apple music",
+                    "url": "https://music.apple.com/au/album/yannycore/1768177326"
+                }
+            ],
+            "credits": [
+                "created by lynU and Alyx Trick",
+                "inspired by Jane Remover and the leroy project"
+            ]
+        }
+    },
+    {
+        "card": {
+            "name": "yannycore 2",
+            "type": "album",
+            "date": "released December 11, 2024",
+            "runtime": "23 minutes 20 seconds",
+            "cover": "https://i1.sndcdn.com/artworks-RP8K6J2CWF8x1vjl-SiJcaQ-t1080x1080.jpg",
+            "tracklist": [
+                {
+                    "title": "then i saw it... again?"
+                },
+                {
+                    "title": "...bring it back!"
+                },
+                {
+                    "title": "dance like laurel's watching"
+                },
+                {
+                    "title": "match my fucking gold & white dress"
+                },
+                {
+                    "title": "Do you know the sample? #ItsFamiliar"
+                },
+                {
+                    "title": "master of the knobs #HereWeGo"
+                },
+                {
+                    "title": "we were bound to see gold & white"
+                },
+                {
+                    "title": "you know who i am... right?"
+                }
+            ],
+            "streaming": [
+                {
+                    "label": "soundcloud",
+                    "url": "https://soundcloud.com/laurel-572942456/sets/yannycore-2"
+                },
+                {
+                    "label": "spotify",
+                    "url": "https://open.spotify.com/album/6wa4BEsthshjyQ7qejujZC"
+                },
+                {
+                    "label": "apple music",
+                    "url": "https://music.apple.com/us/album/yannycore-2/1781479253"
+                }
+            ],
+            "credits": [
+                "created by lynU and Alyx Trick",
+                "inspired by Jane Remover and the leroy project"
+            ]
+        }
+    },
+    {
+        "title": "yannycore 3",
+        "card": {
+            "name": "yannycore 3",
+            "type": "album",
+            "cover": "https://i1.sndcdn.com/avatars-zy0VEwlAQWMRtzd7-SOw6hw-t500x500.jpg",
+            "tracklist": [
+                {
+                    "title": "old habits die hard"
+                },
+                {
+                    "title": "i think she's spinning clockwise?"
+                },
+                {
+                    "title": "dress of a lifetime"
+                },
+                {
+                    "title": "girl i need u to Spin"
+                },
+                {
+                    "title": "think again... {blow.my.mind}"
+                },
+                {
+                    "title": "『watchHerRockThatDress』"
+                },
+                {
+                    "title": "Turn-up-the-LUV<3"
+                },
+                {
+                    "title": "THATS-HOT #LikeAFunkyBeat"
+                }
+            ],
+            "streaming": [
+                {
+                    "label": "soundcloud",
+                    "url": "https://soundcloud.com/laurel-572942456"
+                },
+                {
+                    "label": "spotify",
+                    "url": "https://open.spotify.com/artist/1eGKEKKEYhhSiYKTU6g43A"
+                },
+                {
+                    "label": "apple music",
+                    "url": "https://music.apple.com/us/artist/laurel/1766167119"
+                }
+            ],
+            "extra": [
+                "singles spanning from 2024 - now",
+                "unlikely to be a completed album"
+            ],
+            "credits": [
+                "created by lynU and Alyx Trick",
+                "inspired by Jane Remover and the leroy project"
+            ]
+        }
+    },
+    {
+        "card": {
+            "name": "Well Be Young 4Ever !! 《No we wont. Its All An Illusion》",
+            "type": "single",
+            "date": "released March 8, 2025",
+            "runtime": "2 minutes 35 seconds",
+            "cover": "complexnumbers.jpg",
+            "tracklist": [],
+            "streaming": [
+                {
+                    "label": "soundcloud",
+                    "url": "https://soundcloud.com/laurel-572942456/love"
+                },
+                {
+                    "label": "bandcamp",
+                    "url": "https://lostfrog.bandcamp.com/album/complex-numbers"
+                }
+            ],
+            "credits": [
+                "created by lynU",
+                "released by Lost Frog Productions for the COMPLEX NUMBERS compilation"
+            ]
+        }
+    }
+]
