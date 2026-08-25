@@ -108,7 +108,7 @@ body {
     max-width: 500px;
     margin: 0 auto;
     padding-top: 30px;
-    cursor: url("lyncursorarrow.png"), auto;
+    /*cursor: url("lyncursorarrow.png"), auto;*/
 }
 
 html {
@@ -161,7 +161,7 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 2px;
 
-    cursor: url("images/lyncursorlink.png"), auto;
+    /*cursor: url("images/lyncursorlink.png"), auto;*/
 }
 
 section {
