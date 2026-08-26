@@ -41,6 +41,17 @@ const releases = [
   },
   */
   {
+    title: "A place we knew",
+    cover: "https://i1.sndcdn.com/artworks-JUMV3InE1WYRmO7l-aJMYoQ-t1080x1080.jpg",
+    date: "8/25/26",
+    type: "single",
+    runtime: "2:04",
+    rating: 3,
+    credits: [
+      "yuzu - composer",
+    ]
+  },
+  {
     title: "Flower Man",
     cover: "https://i1.sndcdn.com/artworks-NhvdM6zjJRazQkbm-Pht19w-t500x500.jpg",
     date: "8/14/26",
