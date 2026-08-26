@@ -16,7 +16,8 @@ const artistlinks = {
     "Alyx Trick": "https://alyxtrick.com",
     "Jane Remover": "https://soundcloud.com/janeremover",
     leroy: "https://soundcloud.com/c0ncernn",
-    "Lost Frog Productions": "https://lostfrog.bandcamp.com"
+    "Lost Frog Productions": "https://lostfrog.bandcamp.com",
+    yu89: "https://soundcloud.com/girlyu89"
 };
 const streamclasses = {
     soundcloud: "sc",
