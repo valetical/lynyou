@@ -46,6 +46,7 @@ const releases = [
     date: "8/25/26",
     type: "single",
     runtime: "2:04",
+    platforms: ["sc"],
     rating: 3,
     credits: [
       "yuzu - composer",
