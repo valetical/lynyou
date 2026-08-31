@@ -2,6 +2,7 @@
     {
         "card": {
             "name": "yannycore",
+            "url": "yc1",
             "type": "album",
             "date": "released May 26, 2024",
             "runtime": "14 minutes 51 seconds",
@@ -55,6 +56,7 @@
     {
         "card": {
             "name": "yannycore 2",
+            "url": "yc2",
             "type": "album",
             "date": "released December 11, 2024",
             "runtime": "23 minutes 20 seconds",
@@ -101,14 +103,15 @@
             ],
             "credits": [
                 "created by lynU and Alyx Trick",
-                "inspired by Jane Remover and the leroy project"
+                "inspired by Jane Remover and the leroy project",
+                "collaboration with yu89 (track 4)"
             ]
         }
     },
     {
-        "title": "yannycore 3",
         "card": {
             "name": "yannycore 3",
+            "url": "yc3",
             "type": "album",
             "cover": "https://i1.sndcdn.com/avatars-zy0VEwlAQWMRtzd7-SOw6hw-t500x500.jpg",
             "tracklist": [
@@ -164,6 +167,7 @@
     {
         "card": {
             "name": "Well Be Young 4Ever !! 《No we wont. Its All An Illusion》",
+            "url": "complex",
             "type": "single",
             "date": "released March 8, 2025",
             "runtime": "2 minutes 35 seconds",

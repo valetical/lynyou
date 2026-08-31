@@ -32,18 +32,31 @@ function playMusic() {
     music.play();
 }
 
-document.querySelectorAll(".album,.link,.yanny").forEach((album) => {
-    album.style.left = Math.random() * 80 + 10 + "%";
-    album.style.top = Math.random() * 70 + 10 + "%";
-});
-
 fetch("laurel.json")
     .then((response) => response.json())
     .then((releases) => {
         document.querySelectorAll(".album").forEach((album) => {
-            album.onclick = () => show(releases[album.dataset.release]);
+            album.onclick = () => {
+                const release = releases[album.dataset.release];
+                history.pushState({ release: album.dataset.release }, "", "#" + release.card.url);
+                show(release);
+            };
         });
+
+        const url = location.hash.substring(1);
+        if (url) {
+            const index = releases.findIndex((release) => release.card.url === url);
+            if (index !== -1) {
+                show(releases[index]);
+            }
+        }
     });
+
+window.addEventListener("popstate", () => {
+    if (!location.hash) {
+        gohome();
+    }
+});
 
 function show(release) {
     const card = release.card;
@@ -88,6 +101,6 @@ function show(release) {
 
 function gohome() {
     info.style.display = "none";
-    home.style.display = "block";
+    home.style.display = "flex";
     links.style.display = "block";
 }
