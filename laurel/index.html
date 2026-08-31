@@ -13,7 +13,8 @@
                 font-family: monospace;
             }
 
-            .album {
+            .album,
+            .yanny {
                 position: static;
                 width: 180px;
                 cursor: pointer;
@@ -71,7 +72,6 @@
             }
 
             .link {
-                position: static;
                 display: block;
                 width: fit-content;
                 color: white;
@@ -105,17 +105,14 @@
                 color: #629aa9;
             }
 
-            #streaming .sc,
-            #streaming .spt,
-            #streaming .apl,
-            #streaming .bc {
+            #streaming a {
                 position: static;
                 margin: 0 8px;
                 text-decoration: none;
             }
 
             #streaming a:hover {
-                opacity: 0.6;
+                opacity: 0.7;
             }
 
             #credits {
@@ -135,11 +132,6 @@
             .back a {
                 color: #b1b1b1;
                 text-decoration: none;
-            }
-
-            .yanny {
-                position: static;
-                width: 180px;
             }
         </style>
     </head>
@@ -177,7 +169,7 @@
             <p id="credits"></p>
             <div id="streaming"></div>
 
-            <span class="back"><a href="#" onclick="gohome()">back</a></span>
+            <span class="back"><a href="#">back</a></span>
         </div>
 
         <div class="laurel" onclick="playMusic()">© <span id="year"></span> laurel</div>
