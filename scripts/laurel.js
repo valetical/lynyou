@@ -37,26 +37,23 @@ fetch("laurel.json")
     .then((releases) => {
         document.querySelectorAll(".album").forEach((album) => {
             album.onclick = () => {
-                const release = releases[album.dataset.release];
-                history.pushState({ release: album.dataset.release }, "", "#" + release.card.url);
-                show(release);
+                location.hash = releases[album.dataset.release].card.url;
             };
         });
-
-        const url = location.hash.substring(1);
-        if (url) {
-            const index = releases.findIndex((release) => release.card.url === url);
-            if (index !== -1) {
-                show(releases[index]);
+        function handleHash() {
+            const url = location.hash.slice(1);
+            if (!url) {
+                gohome();
+                return;
+            }
+            const release = releases.find((release) => release.card.url === url);
+            if (release) {
+                show(release);
             }
         }
+        window.addEventListener("hashchange", handleHash);
+        handleHash();
     });
-
-window.addEventListener("popstate", () => {
-    if (!location.hash) {
-        gohome();
-    }
-});
 
 function show(release) {
     const card = release.card;
