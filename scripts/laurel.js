@@ -8,7 +8,8 @@ const artistlinks = {
     "Jane Remover": "https://soundcloud.com/janeremover",
     leroy: "https://soundcloud.com/c0ncernn",
     "Lost Frog Productions": "https://lostfrog.bandcamp.com",
-    yu89: "https://soundcloud.com/girlyu89"
+    yu89: "https://soundcloud.com/girlyu89",
+    yaxzerothree: "https://soundcloud.com/yaxzerothree"
 };
 const streamclasses = {
     soundcloud: "sc",

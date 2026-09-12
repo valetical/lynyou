@@ -91,6 +91,18 @@ const releases = [
   },
 */
   {
+    title: "tim kinsella",
+    cover: "https://i1.sndcdn.com/artworks-G8e4L7KWZXrkI2Fq-MDug6w-t500x500.jpg",
+    date: "8/31/26",
+    type: "single",
+    runtime: "1:38",
+    platforms: ["sc"],
+    rating: 1,
+    credits: [
+      "lynU - production, vocals",
+    ]
+  },
+  {
     title: "Flower Man",
     cover: "https://i1.sndcdn.com/artworks-NhvdM6zjJRazQkbm-Pht19w-t500x500.jpg",
     date: "8/14/26",
