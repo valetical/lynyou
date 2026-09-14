@@ -40,6 +40,18 @@ const releases = [
     ]
   },
   */
+  
+  {
+    title: "Megalo Clamour -v2-",
+    cover: "https://i1.sndcdn.com/artworks-evJXMYRZB1C33cXi-xzKgIw-original.jpg",
+    date: "9/14/26",
+    type: "remix",
+    runtime: "1:49",
+    platforms: ["sc", "yt"],
+    rating: 1,
+    credits: ["Lunaxis - composer", "yuzu - arranger"]
+  },
+  
   {
     title: "A place we knew",
     cover: "https://i1.sndcdn.com/artworks-JUMV3InE1WYRmO7l-aJMYoQ-t1080x1080.jpg",
