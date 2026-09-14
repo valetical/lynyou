@@ -42,7 +42,7 @@ const releases = [
   */
   
   {
-    title: "Megalo Clamour -v2-",
+    title: "MEGALO CLAMOUR -v2-",
     cover: "https://i1.sndcdn.com/artworks-evJXMYRZB1C33cXi-xzKgIw-original.jpg",
     date: "9/14/26",
     type: "remix",
